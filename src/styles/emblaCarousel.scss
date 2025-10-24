@@ -1,15 +1,28 @@
-.embla-container {
-    display: flex;
-}
+.embla {
+    margin-top: 10px;
+    overflow: hidden;
+    position: relative;
 
-.embla-slide {
-    flex: 0 0 80%;
-    min-width: 0;
+    .embla-viewport {
+        overflow: hidden;  
+        width: 100%; 
+    }
 
-    margin-right: 20px;
-    margin-left: 10px;
-}
+    .embla-container {
+        display: flex;
+    }
 
-.embla-viewport {
-    overflow: hidden;   
+    .embla-slide {
+        flex: 0 0 50%;
+        min-width: 0;
+
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    img {
+        display: block;
+        width: auto;
+        height: 200px;      
+    }
 }

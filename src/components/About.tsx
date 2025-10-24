@@ -15,7 +15,7 @@ const About = () => {
         cozy cafés, hidden gems, or scenic walks wherever I go. I care a lot about the little
         details—whether it’s in a button hover state or a perfectly golden cookie!
       </p>
-      <img src="src\assets\images\river.jpg" className="mt-5" />
+      <img src="/images/river.jpg" className="mt-5" />
     </section>
   );
 };

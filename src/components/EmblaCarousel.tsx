@@ -1,16 +1,18 @@
 import { useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import { type EmblaOptionsType } from "embla-carousel";
-import Autoplay from "embla-carousel-autoplay";
-
+import type { Slide } from "../types/types";
+import "../styles/emblaCarousel.scss"
+ 
 type PropType = {
-    slides: Number[];
-    options?: EmblaOptionsType;
+    slides: Array<Slide>;
+    // options?: EmblaOptionsType;
 }
 
 const EmblaCarousel = (props: PropType) => {
-    const { slides, options } = props;
-    const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
+    // const { slides, options } = props;
+    const { slides } = props;
+    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
     const scrollPrev = useCallback(() => {
         if (emblaApi) emblaApi.scrollPrev()
@@ -22,20 +24,27 @@ const EmblaCarousel = (props: PropType) => {
 
 
     return (
-        <div className="embla" ref={emblaRef}>
-            <div className="embla-viewport">
+        <div className="embla">
+            <div className="embla-viewport" ref={emblaRef}>
                 <div className="embla-container">
-                    {slides.map(index => (
-                        <div className="embla-slide" key={index.toString()}>Slide {index.toString()}</div>
+                    {slides.map((slide: Slide, index: number) => (
+                        <div className="embla-slide" key={index}>
+                            <img
+                                src={`/images/${index + 1}.jpg`}
+                                alt={slide.altText}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>
-            <button className="embla-prev" onClick={scrollPrev}>
-                Prev
-            </button>
-            <button className="embla-next" onClick={scrollNext}>
-                Next
-            </button>
+            <div className="embla-buttons">
+                <button className="embla-prev" onClick={scrollPrev}>
+                    Prev
+                </button>
+                <button className="embla-next" onClick={scrollNext}>
+                    Next
+                </button>
+            </div>
         </div>
    )
 };
