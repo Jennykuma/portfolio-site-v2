@@ -1,4 +1,4 @@
 export interface Slide {
-    imagePath: string;
-    altText: string;
+	imagePath: string;
+	altText: string;
 }

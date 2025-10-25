@@ -1,60 +1,60 @@
-import { useCallback } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import { type EmblaOptionsType } from "embla-carousel";
-import type { Slide } from "../types/types";
-import "../styles/emblaCarousel.scss";
+import { useCallback } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
+import { type EmblaOptionsType } from 'embla-carousel';
+import type { Slide } from '../types/types';
+import '../styles/emblaCarousel.scss';
 
 type PropType = {
-    slides: Array<Slide>;
-    // options?: EmblaOptionsType;
+	slides: Array<Slide>;
+	// options?: EmblaOptionsType;
 };
 
 const EmblaCarousel = (props: PropType) => {
-    // const { slides, options } = props;
-    const { slides } = props;
-    const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+	// const { slides, options } = props;
+	const { slides } = props;
+	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
-    const scrollPrev = useCallback(() => {
-        if (emblaApi) emblaApi.scrollPrev();
-    }, [emblaApi]);
+	const scrollPrev = useCallback(() => {
+		if (emblaApi) emblaApi.scrollPrev();
+	}, [emblaApi]);
 
-    const scrollNext = useCallback(() => {
-        if (emblaApi) emblaApi.scrollNext();
-    }, [emblaApi]);
+	const scrollNext = useCallback(() => {
+		if (emblaApi) emblaApi.scrollNext();
+	}, [emblaApi]);
 
-    return (
-        <div className="embla">
-            <div className="embla-viewport" ref={emblaRef}>
-                <div className="embla-container">
-                    {slides.map((slide: Slide, index: number) => (
-                        <div className="embla-slide" key={index}>
-                            <img src={`/images/${index + 1}.jpg`} alt={slide.altText} />
-                        </div>
-                    ))}
-                </div>
-            </div>
-            <div className="embla-buttons">
-                <button className="embla-prev" onClick={scrollPrev}>
-                    <svg
-                        className="w-5 h-5 fill-current"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 256 256"
-                    >
-                        <path d="M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z"></path>
-                    </svg>
-                </button>
-                <button className="embla-next" onClick={scrollNext}>
-                    <svg
-                        className="w-5 h-5 fill-current"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 256 256"
-                    >
-                        <path d="M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    );
+	return (
+		<div className='embla'>
+			<div className='embla-viewport' ref={emblaRef}>
+				<div className='embla-container'>
+					{slides.map((slide: Slide, index: number) => (
+						<div className='embla-slide' key={index}>
+							<img src={`/images/${index + 1}.jpg`} alt={slide.altText} />
+						</div>
+					))}
+				</div>
+			</div>
+			<div className='embla-buttons'>
+				<button className='embla-prev' onClick={scrollPrev}>
+					<svg
+						className='w-5 h-5 fill-current'
+						xmlns='http://www.w3.org/2000/svg'
+						viewBox='0 0 256 256'
+					>
+						<path d='M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z'></path>
+					</svg>
+				</button>
+				<button className='embla-next' onClick={scrollNext}>
+					<svg
+						className='w-5 h-5 fill-current'
+						xmlns='http://www.w3.org/2000/svg'
+						viewBox='0 0 256 256'
+					>
+						<path d='M181.66,133.66l-80,80a8,8,0,0,1-11.32-11.32L164.69,128,90.34,53.66a8,8,0,0,1,11.32-11.32l80,80A8,8,0,0,1,181.66,133.66Z'></path>
+					</svg>
+				</button>
+			</div>
+		</div>
+	);
 };
 
 export default EmblaCarousel;

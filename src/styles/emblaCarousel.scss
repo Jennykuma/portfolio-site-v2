@@ -1,34 +1,34 @@
 .embla {
-    margin-top: 10px;
-    overflow: hidden;
-    position: relative;
+	margin-top: 10px;
+	overflow: hidden;
+	position: relative;
 
-    .embla-viewport {
-        overflow: hidden;
-        width: 100%;
-    }
+	.embla-viewport {
+		overflow: hidden;
+		width: 100%;
+	}
 
-    .embla-container {
-        display: flex;
-    }
+	.embla-container {
+		display: flex;
+	}
 
-    .embla-slide {
-        flex: 0 0 50%;
-        min-width: 0;
+	.embla-slide {
+		flex: 0 0 50%;
+		min-width: 0;
 
-        margin-right: 10px;
-        margin-left: 10px;
-    }
+		margin-right: 10px;
+		margin-left: 10px;
+	}
 
-    img {
-        display: block;
-        width: auto;
-        height: 200px;
-    }
+	img {
+		display: block;
+		width: auto;
+		height: 200px;
+	}
 
-    .embla-buttons {
-        display: flex;
-        float: right;
-        margin-top: 10px;
-    }
+	.embla-buttons {
+		display: flex;
+		float: right;
+		margin-top: 10px;
+	}
 }
