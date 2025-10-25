@@ -1,6 +1,6 @@
 const GetInTouch = () => {
   return (
-    <section id="get-in-touch" className="mt-10 mb-10">
+    <section id="get-in-touch" className="mt-10">
       <span className="font-serif-display text-4xl text-sage">get in touch</span>
       <div>
         <a 
