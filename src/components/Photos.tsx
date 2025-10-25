@@ -27,9 +27,8 @@ const SLIDES: Array<Slide> = [
 
 const Photos = () => {
   return (
-    <section id="photos" className="mt-20">
+    <section id="photos" className="mt-10">
       <span className="font-serif-display text-4xl text-sage">photos</span>
-      {/* <EmblaCarousel slides={SLIDES} options={OPTIONS} /> */}
       <EmblaCarousel slides={SLIDES} />
     </section>
   );

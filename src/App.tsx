@@ -1,5 +1,5 @@
 import About from "./components/About";
-import Contact from "./components/Contact";
+import GetInTouch from "./components/GetInTouch";
 import Experience from "./components/Experience";
 import Nav from "./components/Nav";
 import Photos from "./components/Photos";
@@ -13,7 +13,7 @@ const App = () => {
       <About />
       <Experience />
       <Photos />
-      <Contact />
+      <GetInTouch />
     </div>
   );
 };
