@@ -1,88 +1,88 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 html {
-  scroll-padding-top: 4rem;
-  scroll-behavior: smooth;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
 }
 
 p {
-  font-size: 16px;
+    font-size: 16px;
 }
 
 .timeline {
-  position: relative;
-  max-width: 100%;
-  margin-top: 10px;
-  margin-left: 19px;
+    position: relative;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 19px;
 
-  /* timeline vertical line */
-  ::after {
-    content: "";
-    position: absolute;
-    width: 5px;
-    background-color: var(--color-sage);
-    top: 0;
-    bottom: 0;
-    left: 24px;
-    margin-left: -3px;
-  }
+    /* timeline vertical line */
+    ::after {
+        content: "";
+        position: absolute;
+        width: 5px;
+        background-color: var(--color-sage);
+        top: 0;
+        bottom: 0;
+        left: 24px;
+        margin-left: -3px;
+    }
 }
 
 .node {
-  padding: 40px 40px;
-  position: relative;
-  width: 100%;
-  height: auto;
+    padding: 40px 40px;
+    position: relative;
+    width: 100%;
+    height: auto;
 
-  /* circle */
-  ::after {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    background-color: var(--node-bg);
-    border: 4px solid var(--color-sage);
-    top: 2px;
-    border-radius: 50%;
-    z-index: 1;
-    left: -48.5px;
-  }
+    /* circle */
+    ::after {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: var(--node-bg);
+        border: 4px solid var(--color-sage);
+        top: 2px;
+        border-radius: 50%;
+        z-index: 1;
+        left: -48.5px;
+    }
 }
 
 .details {
-  position: relative;
-  left: 25px;
-  top: 4px;
+    position: relative;
+    left: 25px;
+    top: 4px;
 
-  .company {
-    font-weight: 600; /* or 700 if you want bolder */
-    font-size: 1.05rem;
-  }
+    .company {
+        font-weight: 600; /* or 700 if you want bolder */
+        font-size: 1.05rem;
+    }
 
-  .date {
-    font-weight: 400;
-    font-size: 0.85rem;
-    // color: #6b7280; /* Tailwind gray-500 style */
-  }
+    .date {
+        font-weight: 400;
+        font-size: 0.85rem;
+        // color: #6b7280; /* Tailwind gray-500 style */
+    }
 
-  .description {
-    margin-top: 0.25rem;
-    // color: #374151; /* Tailwind gray-700 */
-    line-height: 1.6;
-    font-size: 0.95rem;
-  }
+    .description {
+        margin-top: 0.25rem;
+        // color: #374151; /* Tailwind gray-700 */
+        line-height: 1.6;
+        font-size: 0.95rem;
+    }
 }
 
 @layer utilities {
-  .node {
-    --node-bg: white;
+    .node {
+        --node-bg: white;
 
-    ::after {
-      background-color: (var(--node-bg));
+        ::after {
+            background-color: (var(--node-bg));
+        }
     }
-  }
 
-  .dark .node {
-    --node-bg: #27272a;
-  }
+    .dark .node {
+        --node-bg: #27272a;
+    }
 }

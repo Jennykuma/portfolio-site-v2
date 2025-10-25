@@ -7,15 +7,15 @@ import "./styles/tailwind.css";
 import "./styles/main.scss";
 
 const App = () => {
-  return (
-    <div className="font-poppins max-w-2xl mx-auto px-4">
-      <Nav />
-      <About />
-      <Experience />
-      <Photos />
-      <GetInTouch />
-    </div>
-  );
+    return (
+        <div className="font-poppins max-w-2xl mx-auto px-4">
+            <Nav />
+            <About />
+            <Experience />
+            <Photos />
+            <GetInTouch />
+        </div>
+    );
 };
 
 export default App;
