@@ -8,3 +8,9 @@
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+	* {
+		@apply transition-colors duration-300 ease-in-out;
+	}
+}

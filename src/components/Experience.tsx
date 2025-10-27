@@ -22,7 +22,13 @@ const Experience = () => {
 								{job.skills.map((skill: string, i: number) => (
 									<span
 										key={i}
-										className='px-2 py-0.5 text-sm rounded-full bg-zinc-100 text-zinc-700 dark:bg-zinc-700 dark:text-gray-200 border border-sage/20 transition-colors duration-300 ease-in-out'
+										className='
+											px-2 py-0.5 text-sm
+											rounded-full bg-zinc-100
+											text-zinc-700 dark:bg-zinc-700
+											dark:text-gray-200
+											border border-sage/20
+										'
 									>
 										{skill}
 									</span>

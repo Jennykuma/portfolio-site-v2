@@ -5,7 +5,11 @@ const GetInTouch = () => {
 
 			<div className='flex flex-col gap-3'>
 				<a
-					className='inline-flex items-center gap-2 hover:text-sage hover:underline underline-offset-4 transition-colors'
+					className='
+						inline-flex items-center gap-2
+						hover:text-sage hover:underline
+						underline-offset-4
+					'
 					href='mailto:jennyle.dev@gmail.com'
 				>
 					<svg
@@ -18,7 +22,11 @@ const GetInTouch = () => {
 					<span>jennyle.dev@gmail.com</span>
 				</a>
 				<a
-					className='inline-flex items-center gap-2 hover:text-sage hover:underline underline-offset-4 transition-colors'
+					className='
+						inline-flex items-center gap-2
+						hover:text-sage hover:underline
+						underline-offset-4
+					'
 					href='https://www.linkedin.com/in/jennyle05'
 					target='_blank'
 					rel='noopener noreferrer'
@@ -33,7 +41,7 @@ const GetInTouch = () => {
 					<span>linkedin</span>
 				</a>
 				<a
-					className='inline-flex items-center gap-2 hover:text-sage hover:underline underline-offset-4 transition-colors'
+					className='inline-flex items-center gap-2 hover:text-sage hover:underline underline-offset-4'
 					href='https://github.com/Jennykuma'
 					target='_blank'
 					rel='noopener noreferrer'
