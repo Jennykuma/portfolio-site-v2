@@ -9,11 +9,16 @@ p {
 	font-size: 16px;
 }
 
+section {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
 .timeline {
 	position: relative;
 	max-width: 100%;
 	margin-top: 10px;
-	margin-left: 19px;
+	margin-left: 20px;
 
 	/* timeline vertical line */
 	::after {
@@ -23,8 +28,7 @@ p {
 		background-color: var(--color-sage);
 		top: 0;
 		bottom: 0;
-		left: 24px;
-		margin-left: -3px;
+		left: 21px;
 	}
 
 	::after(:last-child) {
@@ -46,10 +50,11 @@ p {
 		height: 15px;
 		background-color: var(--node-bg);
 		border: 3px solid var(--color-sage);
-		top: 2px;
+		top: 4px;
 		border-radius: 50%;
 		z-index: 1;
-		left: -47px;
+		left: -50px;
+		transition: background-color 300ms ease-in-out;
 	}
 
 	&:last-child::after {

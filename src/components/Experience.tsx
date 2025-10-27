@@ -2,7 +2,7 @@ import { type Experience, experience } from '../data/experience';
 
 const Experience = () => {
 	return (
-		<section id='experience' className='mt-10'>
+		<section id='experience'>
 			<span className='font-serif-display text-4xl text-sage'>experience</span>
 			<div className='timeline'>
 				{experience.map((job: Experience) => (
@@ -18,6 +18,16 @@ const Experience = () => {
 									<li key={i}>- {item}</li>
 								))}
 							</ul>
+							<div className='skills flex flex-wrap gap-2 mt-2'>
+								{job.skills.map((skill: string, i: number) => (
+									<span
+										key={i}
+										className='px-2 py-0.5 text-sm rounded-full bg-zinc-100 text-zinc-700 dark:bg-zinc-700 dark:text-gray-200 border border-sage/20 transition-colors duration-300 ease-in-out'
+									>
+										{skill}
+									</span>
+								))}
+							</div>
 						</div>
 					</div>
 				))}
