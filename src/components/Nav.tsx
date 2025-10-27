@@ -17,28 +17,37 @@ const Nav = () => {
 	};
 
 	return (
-		<header className='sticky bg-white dark:bg-zinc-800 top-0 z-10'>
+		<header className='sticky top-0 z-10 bg-white dark:bg-zinc-800 transition-colors duration-300 ease-in-out'>
 			<nav className='py-4 flex justify-between'>
-				<a href='/' className='text-lg md:text-xl font-semibold hover:text-sage'>
+				<a
+					href='/'
+					className='text-lg md:text-xl font-semibold hover:text-sage transition-colors ease-in-out duration-100'
+				>
 					jenny le
 				</a>
 				<div className='flex gap-5 text-sm md:text-base font-medium text-zinc-700 dark:text-gray-200'>
-					<a className='hover:text-sage hover:underline underline-offset-4' href='#about'>
+					<a
+						className='hover:text-sage hover:underline underline-offset-4 transition-colors ease-in-out duration-100'
+						href='#about'
+					>
 						about
 					</a>
 					<a
-						className='hover:text-sage hover:underline underline-offset-4'
+						className='hover:text-sage hover:underline underline-offset-4 transition-colors ease-in-out duration-100'
 						href='#experience'
 					>
 						experience
 					</a>
 					<a
-						className='hover:text-sage hover:underline underline-offset-4'
+						className='hover:text-sage hover:underline underline-offset-4 transition-colors ease-in-out duration-100'
 						href='#photos'
 					>
 						photos
 					</a>
-					<button className='relative w-6 h-6 cursor-pointer' onClick={changeTheme}>
+					<button
+						className='relative w-6 h-6 cursor-pointer hover:text-sage transition-colors ease-in-out duration-100'
+						onClick={changeTheme}
+					>
 						{theme === 'dark' ? (
 							<svg
 								className={`absolute inset-0 transition-all duration-550 ease-in-out transform

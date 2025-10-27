@@ -10,7 +10,7 @@ const Experience = () => {
 						<div className='details'>
 							<b className='company'>{job.company}</b>
 							<span className='date'> ({job.period})</span>
-							<p>
+							<p className='role'>
 								<i>{job.role}</i>
 							</p>
 							<ul>
