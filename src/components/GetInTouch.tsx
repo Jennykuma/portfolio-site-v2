@@ -41,7 +41,11 @@ const GetInTouch = () => {
 					<span>linkedin</span>
 				</a>
 				<a
-					className='inline-flex items-center gap-2 hover:text-sage hover:underline underline-offset-4'
+					className='
+						inline-flex items-center gap-2
+						hover:text-sage hover:underline
+						underline-offset-4
+					'
 					href='https://github.com/Jennykuma'
 					target='_blank'
 					rel='noopener noreferrer'

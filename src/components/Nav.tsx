@@ -16,10 +16,24 @@ const Nav = () => {
 		setTimeout(() => setSpinning(false), 300);
 	};
 
+	const scrollToTop = (e: React.MouseEvent) => {
+		e.preventDefault();
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+		history.replaceState(null, '', window.location.pathname);
+	};
+
 	return (
 		<header className='sticky top-0 z-10 bg-white dark:bg-zinc-800'>
 			<nav className='py-4 flex justify-between text-zinc-700 dark:text-gray-200'>
-				<a href='#top' className='text-lg md:text-xl font-semibold hover:text-sage'>
+				<a
+					href='#'
+					className='
+						text-lg md:text-xl font-semibold
+						hover:text-sage hover:underline 
+						underline-offset-4
+					'
+					onClick={(e) => scrollToTop(e)}
+				>
 					jenny le
 				</a>
 				<div className='flex gap-5 text-sm md:text-base font-medium'>
