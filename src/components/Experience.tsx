@@ -1,4 +1,4 @@
-import { type Experience, experience } from '../data/experience';
+import { type Experience, experience, otherSkills } from '../data/experience';
 
 const Experience = () => {
 	return (
@@ -6,7 +6,7 @@ const Experience = () => {
 			<span className='font-serif-display text-4xl text-sage'>experience</span>
 			<div className='timeline'>
 				{experience.map((job: Experience) => (
-					<div className='node'>
+					<div key={`${job.company}-${job.period}`} className='node'>
 						<div className='details'>
 							<b className='company'>{job.company}</b>
 							<span className='date'> ({job.period})</span>
@@ -37,6 +37,17 @@ const Experience = () => {
 						</div>
 					</div>
 				))}
+			</div>
+			<div className='other-skills'>
+				<h3>other skills</h3>
+				<div className='other-skills-grid'>
+					{otherSkills.map((group) => (
+						<div key={group.category} className='other-skills-row'>
+							<span className='label'>{group.category}</span>
+							<span className='value'>{group.skills.join(', ')}</span>
+						</div>
+					))}
+				</div>
 			</div>
 		</section>
 	);
