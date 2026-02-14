@@ -1,11 +1,11 @@
-import { type Experience, experience, otherSkills } from '../data/experience';
+import { type Experience as ExperienceItem, experience, otherSkills } from '../data/experience';
 
 const Experience = () => {
 	return (
 		<section id='experience'>
 			<span className='font-serif-display text-4xl text-sage'>experience</span>
 			<div className='timeline'>
-				{experience.map((job: Experience) => (
+				{experience.map((job: ExperienceItem) => (
 					<div key={`${job.company}-${job.period}`} className='node'>
 						<div className='details'>
 							<b className='company'>{job.company}</b>
