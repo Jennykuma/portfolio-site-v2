@@ -13,7 +13,7 @@ const Experience = () => {
 							<p className='role'>
 								<i>{job.role}</i>
 							</p>
-							<ul>
+							<ul className='description'>
 								{job.description.map((item, i) => (
 									<li key={i}>- {item}</li>
 								))}
@@ -39,7 +39,7 @@ const Experience = () => {
 				))}
 			</div>
 			<div className='other-skills'>
-				<h3>other skills</h3>
+				<div className='font-serif-display text-xl text-sage'>other skills</div>
 				<div className='other-skills-grid'>
 					{otherSkills.map((group) => (
 						<div key={group.category} className='other-skills-row'>

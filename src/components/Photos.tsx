@@ -1,4 +1,3 @@
-import type { EmblaOptionsType } from 'embla-carousel';
 import EmblaCarousel from './EmblaCarousel';
 import type { Slide } from '../types/types';
 
@@ -8,20 +7,32 @@ import type { Slide } from '../types/types';
 
 const SLIDES: Array<Slide> = [
 	{
-		imagePath: 'src/assets/images/1.jpg',
-		altText: 'bear',
+		imagePath: '/images/web/DSCF0373.JPG',
+		altText: 'mountain and valley',
 	},
 	{
-		imagePath: 'src/assets/images/2.jpg',
-		altText: 'another bear',
+		imagePath: '/images/web/DSCF0380.JPG',
+		altText: 'cloudy mountain view',
 	},
 	{
-		imagePath: 'src/assets/images/3.jpg',
-		altText: 'bear',
+		imagePath: '/images/web/DSCF0474.JPG',
+		altText: 'river landscape',
 	},
 	{
-		imagePath: 'src/assets/images/4.jpg',
-		altText: 'another bear',
+		imagePath: '/images/web/DSCF1206.JPG',
+		altText: 'sunset landscape',
+	},
+	{
+		imagePath: '/images/web/DSCF1217.JPG',
+		altText: 'mountain panorama',
+	},
+	{
+		imagePath: '/images/web/DSCF1286.JPG',
+		altText: 'trail and trees',
+	},
+	{
+		imagePath: '/images/web/4.jpg',
+		altText: 'landscape detail',
 	},
 ];
 

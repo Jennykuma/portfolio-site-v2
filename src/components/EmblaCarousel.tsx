@@ -1,6 +1,5 @@
 import { useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
-import { type EmblaOptionsType } from 'embla-carousel';
 import type { Slide } from '../types/types';
 import '../styles/emblaCarousel.scss';
 
@@ -26,9 +25,9 @@ const EmblaCarousel = (props: PropType) => {
 		<div className='embla'>
 			<div className='embla-viewport' ref={emblaRef}>
 				<div className='embla-container'>
-					{slides.map((slide: Slide, index: number) => (
-						<div className='embla-slide' key={index}>
-							<img src={`/images/${index + 1}.jpg`} alt={slide.altText} />
+					{slides.map((slide: Slide) => (
+						<div className='embla-slide' key={slide.imagePath}>
+							<img src={slide.imagePath} alt={slide.altText} />
 						</div>
 					))}
 				</div>

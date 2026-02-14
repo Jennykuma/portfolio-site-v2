@@ -99,14 +99,15 @@ section {
 
 	.description {
 		margin-top: 0.25rem;
-		line-height: 1.6;
-		font-size: 0.95rem;
+		line-height: 1.5;
+		font-size: 0.88rem;
+		max-width: 60ch;
 	}
 }
 
 .other-skills {
 	margin-top: 1.25rem;
-	margin-left: 3rem;
+	margin-bottom: 1.25rem;
 	padding-top: 1rem;
 	border-top: 2px solid color-mix(in srgb, var(--color-sage), transparent 45%);
 
@@ -122,10 +123,12 @@ section {
 
 .other-skills-grid {
 	display: grid;
-	gap: 0.8rem;
+	gap: 0.95rem;
+	margin-left: 0.5rem;
 }
 
 .other-skills-row {
+	margin-top: 0.5rem;
 	display: grid;
 	grid-template-columns: minmax(140px, 175px) 1fr;
 	column-gap: 1.35rem;

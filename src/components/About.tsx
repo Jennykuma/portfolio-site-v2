@@ -12,9 +12,10 @@ const About = () => {
 			</p>
 			<p className='mt-3'>
 				Outside of work, you’ll usually find me crocheting something cute, baking, vibing at
-				a concert, getting lost in a video game, or planning my next adventure. I love
-				finding cozy cafés and hidden gems wherever I go—and I care about the little
-				details, whether it’s a button hover state or a perfectly golden cookie!
+				a concert, getting lost in a video game, reading a spine-chilling murder mystery, or
+				planning my next adventure. I love finding cozy cafés and hidden gems wherever I
+				go—and I care about the little details, whether it’s a button hover state or a
+				perfectly golden cookie!
 			</p>
 			<img src='/images/river.jpg' className='mt-5' />
 		</section>
