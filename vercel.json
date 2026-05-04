@@ -2,15 +2,11 @@
 	"rewrites": [
 		{
 			"source": "/kuma-recipes",
-			"destination": "https://kuma-recipes-web.vercel.app"
+			"destination": "https://kuma-recipes-web.vercel.app/kuma-recipes"
 		},
 		{
 			"source": "/kuma-recipes/:match*",
-			"destination": "https://kuma-recipes-web.vercel.app/:match*"
-		},
-		{
-			"source": "/api/:path*",
-			"destination": "https://kuma-recipes-web.vercel.app/api/:path*"
+			"destination": "https://kuma-recipes-web.vercel.app/kuma-recipes/:match*"
 		}
 	]
 }
