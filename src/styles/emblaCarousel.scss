@@ -13,20 +13,46 @@
 	}
 
 	.embla-slide {
-		flex: 0 0 auto;
+		flex: 0 0 clamp(210px, 29vw, 340px);
 		min-width: 0;
-		margin-right: 12px;
+		margin-right: 16px;
 	}
 
 	img {
 		display: block;
-		width: auto;
-		height: 200px;
+		width: 100%;
+		height: clamp(260px, 36vw, 380px);
+		object-fit: cover;
 	}
 
 	.embla-buttons {
 		display: flex;
 		float: right;
 		margin-top: 10px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.embla {
+		.embla-slide {
+			flex-basis: clamp(200px, 42vw, 300px);
+		}
+
+		img {
+			height: clamp(240px, 45vw, 340px);
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.embla {
+		.embla-slide {
+			flex-basis: 84%;
+			margin-right: 12px;
+		}
+
+		img {
+			height: clamp(280px, 78vw, 360px);
+		}
 	}
 }
