@@ -138,11 +138,13 @@ section {
 	.label {
 		font-weight: 600;
 		color: var(--color-sage);
+		font-size: 15px;
 	}
 
 	.value {
 		line-height: 1.65;
 		max-width: 68ch;
+		font-size: 15px;
 	}
 }
 
