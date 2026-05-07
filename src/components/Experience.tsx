@@ -15,7 +15,12 @@ const Experience = () => {
 							</p>
 							<ul className='description'>
 								{job.description.map((item, i) => (
-									<li key={i}>- {item}</li>
+									<li
+										key={i}
+										className='mt-2 text-sm text-zinc-700 dark:text-gray-300'
+									>
+										- {item}
+									</li>
 								))}
 							</ul>
 							<div className='skills flex flex-wrap gap-2 mt-2'>
@@ -44,7 +49,9 @@ const Experience = () => {
 					{otherSkills.map((group) => (
 						<div key={group.category} className='other-skills-row'>
 							<span className='label'>{group.category}</span>
-							<span className='value'>{group.skills.join(', ')}</span>
+							<span className='value text-zinc-700 dark:text-gray-300'>
+								{group.skills.join(', ')}
+							</span>
 						</div>
 					))}
 				</div>

@@ -2,7 +2,7 @@ const About = () => {
 	return (
 		<section id='about'>
 			<span className='font-serif-display text-4xl text-sage'>about me</span>
-			<p>
+			<p className='text-zinc-700 dark:text-gray-300'>
 				Hey there! I’m a UI developer at Cisco who loves building clean, thoughtful
 				interfaces. I’m equally curious about the UX side—digging into design choices,
 				sitting in on user interviews, and exploring tools like Google Analytics to see
@@ -10,7 +10,7 @@ const About = () => {
 				better, from refining code to improving performance and making sure everything’s
 				backed by solid tests.
 			</p>
-			<p className='mt-3'>
+			<p className='mt-3 text-zinc-700 dark:text-gray-300'>
 				Outside of work, you’ll usually find me crocheting something cute, baking, vibing at
 				a concert, getting lost in a video game, reading a spine-chilling murder mystery, or
 				planning my next adventure. I love finding cozy cafés and hidden gems wherever I
