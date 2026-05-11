@@ -32,13 +32,13 @@ const SLIDES: Array<Slide> = [
 	},
 ];
 
-const Photos = () => {
+const Photography = () => {
 	return (
-		<section id='photos'>
-			<h2 className='font-serif-display text-4xl text-sage'>photos</h2>
+		<section id='photography'>
+			<h2 className='font-serif-display text-4xl text-sage'>photography</h2>
 			<EmblaCarousel slides={SLIDES} />
 		</section>
 	);
 };
 
-export default Photos;
+export default Photography;

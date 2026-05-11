@@ -54,9 +54,9 @@ const Nav = () => {
 					</a>
 					<a
 						className='hover:text-sage hover:underline underline-offset-4'
-						href='#photos'
+						href='#photography'
 					>
-						photos
+						photography
 					</a>
 					<button
 						type='button'

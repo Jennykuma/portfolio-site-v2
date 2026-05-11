@@ -3,7 +3,7 @@ import About from './components/About';
 import GetInTouch from './components/GetInTouch';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
-import Photos from './components/Photos';
+import Photography from './components/Photography';
 
 const App = () => {
 	return (
@@ -13,7 +13,7 @@ const App = () => {
 			<About />
 			<Experience />
 			<Projects />
-			<Photos />
+			<Photography />
 			<GetInTouch />
 		</div>
 	);
