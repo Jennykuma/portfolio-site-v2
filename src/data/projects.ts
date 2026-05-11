@@ -1,16 +1,23 @@
 export type Project = {
 	title: string;
 	period: string;
-	description: string;
+	description: string[];
 	skills: string[];
+	github: string;
+	demo?: string;
 };
 
 export const projects: Project[] = [
 	{
 		title: 'kuma recipes',
 		period: 'jan 2026 - present',
-		description:
-			'A cozy recipe notetaking app built with React, designed to help store recipes, notes and photos in one place. It uses a simple and intuitive interface without unecessary scrolling, with a focus on ease of use and organization. The app allows users to create and manage their own recipe collections, making it easy to find and share recipes with friends and family.',
+		description: [
+			'Built a full-stack recipe app that centralizes recipes, notes, and photos in one workflow',
+			'Implemented tagging and search features to quickly find recipes by name or custom labels',
+			'Designed low-friction navigation to reduce scrolling and speed up recipe reference during cooking',
+			'Owned architecture end-to-end across React frontend, Fastify API, Prisma models, and PostgreSQL',
+			'Integrated auth, routing, and data-fetching layers (Clerk, React Router, TanStack Query)',
+		],
 		skills: [
 			'React',
 			'TypeScript',
@@ -25,12 +32,18 @@ export const projects: Project[] = [
 			'Vitest',
 			'Docker',
 		],
+		github: 'https://github.com/Jennykuma/kuma-recipes/tree/main#kuma-recipes',
+		demo: '/kuma-recipes',
 	},
 	{
 		title: 'ui patterns playground',
 		period: 'dec 2025 - present',
-		description:
-			'A React + TypeScript playground for building and testing reusable UI interaction patterns with local state isolation and accessibility basics. The project implements components like debounced search, click-outside dropdown, keyboard-accessible toggle, and modal behavior, focusing on event handling, keyboard interactions, and clean component composition',
+		description: [
+			'Created a reusable interaction lab to validate UI patterns before shipping to product code',
+			'Implemented non-trivial behaviors including debounced search, click-outside handling, and modal focus flows',
+			'Applied accessibility-first patterns for keyboard navigation and predictable state transitions',
+			'Drove component design and code quality conventions as sole owner of the codebase',
+		],
 		skills: [
 			'React',
 			'TypeScript',
@@ -42,21 +55,29 @@ export const projects: Project[] = [
 			'Component architecture',
 			'ESLint + Prettier',
 		],
+		github: 'https://github.com/Jennykuma/ui-patterns-playground#ui-interactions-playground',
+		demo: '/ui-patterns-playground',
 	},
 	{
 		title: 'night market discord bot',
 		period: 'jul 2022 - aug 2024',
-		description:
-			'A TypeScript Discord bot for a 400-member Lost Ark community server (“Night Market”). It provides slash commands for server status and crystal price lookups via external APIs, posts rich embed responses with images, and runs an automated weekly shop-reminder on a cron schedule.',
+		description: [
+			'Supported a 400-member Discord community with automated reminders and utility slash commands',
+			'Integrated external game-status and pricing APIs, then transformed responses into rich embeds',
+			'Managed reliability of scheduled cron jobs and hosted runtime operations on Heroku',
+			'Owned feature delivery, bot maintenance, and production updates over a two-year lifecycle',
+		],
 		skills: [
 			'TypeScript',
-			'Node.js',
-			'discord.js',
+			'Nodejs',
+			'discordjs',
 			'moment',
 			'cron',
 			'REST API (axios)',
 			'dotenv',
 			'Heroku',
 		],
+		github: 'https://github.com/Jennykuma/night-market-discord-bot/tree/main#night-market-discord-bot',
+		demo: '',
 	},
 ];
