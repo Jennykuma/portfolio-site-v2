@@ -7,6 +7,14 @@
 		{
 			"source": "/kuma-recipes/:match*",
 			"destination": "https://kuma-recipes-web.vercel.app/kuma-recipes/:match*"
+		},
+		{
+			"source": "/ui-patterns-playground",
+			"destination": "https://ui-patterns-playground-sigma.vercel.app/"
+		},
+		{
+			"source": "/ui-patterns-playground/:match*",
+			"destination": "https://ui-patterns-playground-sigma.vercel.app/:match*"
 		}
 	]
 }
