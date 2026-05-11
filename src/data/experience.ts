@@ -22,7 +22,7 @@ export const experience: Experience[] = [
 			'Increased frontend test coverage for micro-applications from ~80% to 91%, reducing regression risk and improving release confidence',
 			'Ramped up quickly on a new product team and delivered production-ready features in the first sprint, using AI-assisted development (Codex) to accelerate legacy-page migration',
 		],
-		skills: ['React.js', 'TypeScript', 'TanStack Query', 'Cypress', 'SASS', 'Codex'],
+		skills: ['React.js', 'TypeScript', 'TanStack Query', 'Cypress', 'Codex'],
 	},
 	{
 		company: 'Cisco Secure Endpoint',
@@ -33,7 +33,15 @@ export const experience: Experience[] = [
 			'Partnered with Ruby on Rails backend teams to integrate APIs and deliver data-rich UI, including MITRE ATT&CK-related views',
 			'Improved reliability through stronger test automation with Jest and Cypress',
 		],
-		skills: ['React.js', 'Vue.js', 'D3.js', 'Jest', 'Ruby on Rails', 'Capybara', 'SASS'],
+		skills: [
+			'React.js',
+			'Vue.js',
+			'Google Analytics',
+			'D3.js',
+			'Jest',
+			'Ruby on Rails',
+			'Capybara',
+		],
 	},
 	{
 		company: 'CNOOC International',

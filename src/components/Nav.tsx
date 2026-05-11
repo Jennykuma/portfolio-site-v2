@@ -24,7 +24,7 @@ const Nav = () => {
 
 	return (
 		<header className='sticky top-0 z-10 bg-white dark:bg-zinc-800'>
-			<nav className='py-4 flex items-center justify-between text-zinc-700 dark:text-gray-200'>
+			<nav className='py-4 flex flex-col items-start gap-2 text-zinc-700 dark:text-gray-200 sm:flex-row sm:items-center sm:justify-between'>
 				<a
 					href='#'
 					className='
@@ -36,7 +36,7 @@ const Nav = () => {
 				>
 					jenny le
 				</a>
-				<div className='flex gap-5 text-sm font-medium'>
+				<div className='flex w-full items-center justify-between gap-4 text-sm font-medium sm:w-auto sm:justify-start sm:gap-5'>
 					<a className='hover:text-sage hover:underline underline-offset-4' href='#about'>
 						about
 					</a>
@@ -91,7 +91,6 @@ const Nav = () => {
 								viewBox='0 0 24 24'
 								strokeWidth={1.25}
 								stroke='currentColor'
-								filter='blur(0.23px)'
 							>
 								<path
 									strokeLinecap='round'
