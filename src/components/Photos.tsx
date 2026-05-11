@@ -1,10 +1,6 @@
 import EmblaCarousel from './EmblaCarousel';
 import type { Slide } from '../types/types';
 
-// const OPTIONS: EmblaOptionsType = {};
-// const SLIDE_COUNT = 5;
-// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
-
 const SLIDES: Array<Slide> = [
 	{
 		imagePath: '/images/web/DSCF0373.JPG',
@@ -39,7 +35,7 @@ const SLIDES: Array<Slide> = [
 const Photos = () => {
 	return (
 		<section id='photos'>
-			<span className='font-serif-display text-4xl text-sage'>photos</span>
+			<h2 className='font-serif-display text-4xl text-sage'>photos</h2>
 			<EmblaCarousel slides={SLIDES} />
 		</section>
 	);

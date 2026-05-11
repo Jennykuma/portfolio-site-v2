@@ -3,7 +3,7 @@ import { type Project as projectItem, projects } from '../data/projects';
 const Projects = () => {
 	return (
 		<section id='projects' className='projects'>
-			<span className='font-serif-display text-4xl text-sage'>projects</span>
+			<h2 className='font-serif-display text-4xl text-sage'>projects</h2>
 			{projects.map((project: projectItem) => (
 				<div className='project' key={project.title}>
 					<div className='flex justify-between items-center'>

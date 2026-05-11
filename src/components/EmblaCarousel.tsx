@@ -5,11 +5,9 @@ import '../styles/emblaCarousel.scss';
 
 type PropType = {
 	slides: Array<Slide>;
-	// options?: EmblaOptionsType;
 };
 
 const EmblaCarousel = (props: PropType) => {
-	// const { slides, options } = props;
 	const { slides } = props;
 	const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
 
@@ -33,7 +31,12 @@ const EmblaCarousel = (props: PropType) => {
 				</div>
 			</div>
 			<div className='embla-buttons'>
-				<button className='embla-prev' onClick={scrollPrev}>
+				<button
+					type='button'
+					aria-label='Previous photo'
+					className='embla-prev'
+					onClick={scrollPrev}
+				>
 					<svg
 						className='w-5 h-5 fill-current'
 						xmlns='http://www.w3.org/2000/svg'
@@ -42,7 +45,12 @@ const EmblaCarousel = (props: PropType) => {
 						<path d='M165.66,202.34a8,8,0,0,1-11.32,11.32l-80-80a8,8,0,0,1,0-11.32l80-80a8,8,0,0,1,11.32,11.32L91.31,128Z'></path>
 					</svg>
 				</button>
-				<button className='embla-next' onClick={scrollNext}>
+				<button
+					type='button'
+					aria-label='Next photo'
+					className='embla-next'
+					onClick={scrollNext}
+				>
 					<svg
 						className='w-5 h-5 fill-current'
 						xmlns='http://www.w3.org/2000/svg'

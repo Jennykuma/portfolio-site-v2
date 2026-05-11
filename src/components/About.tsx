@@ -1,7 +1,7 @@
 const About = () => {
 	return (
 		<section id='about'>
-			<span className='font-serif-display text-4xl text-sage'>about me</span>
+			<h2 className='font-serif-display text-4xl text-sage'>about me</h2>
 			<p className='text-zinc-700 dark:text-gray-300'>
 				Hey there! I’m a UI developer at Cisco who loves building clean, thoughtful
 				interfaces. I’m equally curious about the UX side—digging into design choices,
@@ -17,7 +17,7 @@ const About = () => {
 				go—and I care about the little details, whether it’s a button hover state or a
 				perfectly golden cookie!
 			</p>
-			<img src='/images/river.jpg' className='mt-5' />
+			<img src='/images/river.jpg' alt='River landscape' className='mt-5' />
 		</section>
 	);
 };

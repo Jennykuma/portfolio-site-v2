@@ -1,7 +1,7 @@
 const GetInTouch = () => {
 	return (
 		<section id='get-in-touch' className='border-zinc-200 dark:border-zinc-700'>
-			<span className='font-serif-display text-4xl text-sage'>get in touch</span>
+			<h2 className='font-serif-display text-4xl text-sage'>get in touch</h2>
 
 			<div className='flex flex-col gap-3'>
 				<a

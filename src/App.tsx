@@ -4,8 +4,6 @@ import GetInTouch from './components/GetInTouch';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Photos from './components/Photos';
-import './styles/tailwind.css';
-import './styles/main.scss';
 
 const App = () => {
 	return (

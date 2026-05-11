@@ -3,7 +3,7 @@ import { type Experience as ExperienceItem, experience, otherSkills } from '../d
 const Experience = () => {
 	return (
 		<section id='experience'>
-			<span className='font-serif-display text-4xl text-sage'>experience</span>
+			<h2 className='font-serif-display text-4xl text-sage'>experience</h2>
 			<div className='timeline'>
 				{experience.map((job: ExperienceItem) => (
 					<div key={`${job.company}-${job.period}`} className='node'>
@@ -15,13 +15,13 @@ const Experience = () => {
 							<p className='role'>
 								<i>{job.role}</i>
 							</p>
-							<ul className='description'>
+							<ul className='description list-disc pl-5'>
 								{job.description.map((item, i) => (
 									<li
 										key={i}
 										className='mt-2 text-sm text-zinc-700 dark:text-gray-300'
 									>
-										- {item}
+										{item}
 									</li>
 								))}
 							</ul>
@@ -45,9 +45,9 @@ const Experience = () => {
 					</div>
 				))}
 			</div>
-			<div className='other-skills'>
-				<div className='font-serif-display text-4xl text-sage'>other skills</div>
-				<div className='other-skills-grid'>
+				<div className='other-skills'>
+					<h3 className='font-serif-display text-4xl text-sage'>other skills</h3>
+					<div className='other-skills-grid'>
 					{otherSkills.map((group) => (
 						<div key={group.category} className='other-skills-row'>
 							<span className='label'>{group.category}</span>

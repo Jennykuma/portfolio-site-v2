@@ -3,10 +3,10 @@ import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import { defineConfig, globalIgnores } from "eslint/config";
 import globals from "globals";
+import prettier from "eslint-config-prettier";
 import tseslint from "typescript-eslint";
 
 export default defineConfig([
-    // 👇 Replace your old .eslintignore with this
     globalIgnores(["dist", "node_modules", "coverage"]),
 
     {
@@ -23,7 +23,6 @@ export default defineConfig([
             globals: globals.browser,
         },
         rules: {
-            // Recommended small tweaks
             "no-unused-vars": "off",
             "@typescript-eslint/no-unused-vars": [
                 "warn",

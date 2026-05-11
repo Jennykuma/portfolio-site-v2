@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Nav = () => {
 	const html = document.documentElement;
-	const [theme, setTheme] = useState(html.classList[0]);
+	const [theme, setTheme] = useState(html.classList.contains('dark') ? 'dark' : 'light');
 	const [spinning, setSpinning] = useState(false);
 
 	const changeTheme = () => {
@@ -59,6 +59,8 @@ const Nav = () => {
 						photos
 					</a>
 					<button
+						type='button'
+						aria-label='Toggle dark mode'
 						className='relative w-6 h-6 cursor-pointer text-zinc-600 hover:text-sage dark:text-zinc-300 bottom-1'
 						onClick={changeTheme}
 					>
