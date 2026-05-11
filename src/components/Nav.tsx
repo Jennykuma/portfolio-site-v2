@@ -24,7 +24,7 @@ const Nav = () => {
 
 	return (
 		<header className='sticky top-0 z-10 bg-white dark:bg-zinc-800'>
-			<nav className='py-4 flex justify-between text-zinc-700 dark:text-gray-200'>
+			<nav className='py-4 flex items-center justify-between text-zinc-700 dark:text-gray-200'>
 				<a
 					href='#'
 					className='
@@ -36,7 +36,7 @@ const Nav = () => {
 				>
 					jenny le
 				</a>
-				<div className='flex gap-5 text-sm md:text-base font-medium'>
+				<div className='flex gap-5 text-sm font-medium'>
 					<a className='hover:text-sage hover:underline underline-offset-4' href='#about'>
 						about
 					</a>
@@ -48,23 +48,29 @@ const Nav = () => {
 					</a>
 					<a
 						className='hover:text-sage hover:underline underline-offset-4'
+						href='#projects'
+					>
+						projects
+					</a>
+					<a
+						className='hover:text-sage hover:underline underline-offset-4'
 						href='#photos'
 					>
 						photos
 					</a>
 					<button
-						className='relative w-6 h-6 cursor-pointer hover:text-sage'
+						className='relative w-6 h-6 cursor-pointer text-zinc-600 hover:text-sage dark:text-zinc-300 bottom-1'
 						onClick={changeTheme}
 					>
 						{theme === 'dark' ? (
 							<svg
-								className={`absolute inset-0 transition-all duration-550 ease-in-out transform
+								className={`absolute inset-0 text-current transition-all duration-550 ease-in-out transform
                                 ${theme === 'dark' ? 'opacity-100 scale-100' : 'opacity-0 scale-90'}
                                 ${spinning && theme === 'dark' ? 'rotate-[72deg]' : 'rotate-0'}`}
 								xmlns='http://www.w3.org/2000/svg'
 								fill='none'
 								viewBox='0 0 24 24'
-								strokeWidth={1.5}
+								strokeWidth={1.25}
 								stroke='currentColor'
 							>
 								<path
@@ -75,14 +81,15 @@ const Nav = () => {
 							</svg>
 						) : (
 							<svg
-								className={`absolute inset-0 transition-all duration-550 ease-in-out transform
-                                ${theme === 'dark' ? 'opacity-0 scale-90' : 'opacity-100 scale-100'}
+								className={`absolute inset-0 text-current transition-all duration-550 ease-in-out transform
+                                ${theme === 'dark' ? 'opacity-0 scale-90' : 'opacity-100 scale-95'}
                                 ${spinning && theme === 'light' ? 'rotate-[72deg]' : 'rotate-0'}`}
 								xmlns='http://www.w3.org/2000/svg'
 								fill='none'
 								viewBox='0 0 24 24'
-								strokeWidth={1.5}
+								strokeWidth={1.25}
 								stroke='currentColor'
+								filter='blur(0.23px)'
 							>
 								<path
 									strokeLinecap='round'

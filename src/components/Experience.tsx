@@ -8,8 +8,10 @@ const Experience = () => {
 				{experience.map((job: ExperienceItem) => (
 					<div key={`${job.company}-${job.period}`} className='node'>
 						<div className='details'>
-							<b className='company'>{job.company}</b>
-							<span className='date'> ({job.period})</span>
+							<div className='flex justify-between items-center'>
+								<b className='company'>{job.company}</b>
+								<span className='date'>{job.period}</span>
+							</div>
 							<p className='role'>
 								<i>{job.role}</i>
 							</p>
@@ -28,7 +30,7 @@ const Experience = () => {
 									<span
 										key={i}
 										className='
-											px-2 py-0.5 text-sm
+											px-2 py-0.5 text-xs
 											rounded-full bg-zinc-100
 											text-zinc-700 dark:bg-zinc-700
 											dark:text-gray-200
@@ -44,7 +46,7 @@ const Experience = () => {
 				))}
 			</div>
 			<div className='other-skills'>
-				<div className='font-serif-display text-xl text-sage'>other skills</div>
+				<div className='font-serif-display text-4xl text-sage'>other skills</div>
 				<div className='other-skills-grid'>
 					{otherSkills.map((group) => (
 						<div key={group.category} className='other-skills-row'>

@@ -10,9 +10,9 @@ p {
 	line-height: 1.58;
 }
 
-section {
-	margin-top: 16px;
-	margin-bottom: 16px;
+section + section {
+	margin-top: 2.5rem;
+	margin-bottom: 2.5rem;
 }
 
 #top {
@@ -43,7 +43,7 @@ section {
 }
 
 .node {
-	padding: 40px 40px;
+	padding: 15px 40px;
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -81,16 +81,7 @@ section {
 	.company {
 		font-weight: 600;
 		font-size: 1.05rem;
-	}
-
-	.date {
-		font-weight: 400;
-		font-size: 0.85rem;
-		color: #71717a; /* Tailwind gray-500 style */
-
-		.dark & {
-			color: #a1a1aa;
-		}
+		margin-right: 8px;
 	}
 
 	.role {
@@ -106,11 +97,20 @@ section {
 	}
 }
 
+.date {
+	font-weight: 400;
+	font-size: 0.75rem;
+	color: #71717a; /* Tailwind gray-500 style */
+
+	.dark & {
+		color: #a1a1aa;
+	}
+}
+
 .other-skills {
-	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 	padding-top: 1rem;
-	border-top: 2px solid color-mix(in srgb, var(--color-sage), transparent 45%);
 
 	h3 {
 		font-size: 1.05rem;
@@ -124,14 +124,12 @@ section {
 
 .other-skills-grid {
 	display: grid;
-	gap: 0.95rem;
-	margin-left: 0.5rem;
+	gap: 1.2rem;
 }
 
 .other-skills-row {
-	margin-top: 0.5rem;
 	display: grid;
-	grid-template-columns: minmax(140px, 175px) 1fr;
+	grid-template-columns: 150px minmax(0, 1fr);
 	column-gap: 1.35rem;
 	align-items: start;
 
@@ -143,7 +141,7 @@ section {
 
 	.value {
 		line-height: 1.65;
-		max-width: 68ch;
+		max-width: 58ch;
 		font-size: 15px;
 	}
 }
@@ -156,6 +154,13 @@ section {
 	.other-skills-row {
 		grid-template-columns: 1fr;
 		row-gap: 0.05rem;
+	}
+}
+
+.projects {
+	.project + .project {
+		margin-top: 15px;
+		margin-bottom: 15px;
 	}
 }
 

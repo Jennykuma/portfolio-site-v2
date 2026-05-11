@@ -15,19 +15,19 @@ export const experience: Experience[] = [
 	{
 		company: 'Cisco Secure Access',
 		role: 'Intermediate Software Developer',
-		period: 'september 2025-present',
+		period: 'sept 2025 — present',
 		description: [
-			'Built and maintained complex UI components for enterprise security workflows using React, TypeScript, and React Query',
-			'Drove refactors during migration to a new component system, improving consistency and long-term maintainability across micro-applications.',
+			'Built and maintained complex UI components for enterprise security workflows using React, TypeScript, and TanStack Query',
+			'Drove refactors during migration to a new component system, improving consistency and long-term maintainability across micro-applications',
 			'Increased frontend test coverage for micro-applications from ~80% to 91%, reducing regression risk and improving release confidence',
 			'Ramped up quickly on a new product team and delivered production-ready features in the first sprint, using AI-assisted development (Codex) to accelerate legacy-page migration',
 		],
-		skills: ['React.js', 'TypeScript', 'React Query', 'Cypress', 'SASS', 'Codex'],
+		skills: ['React.js', 'TypeScript', 'TanStack Query', 'Cypress', 'SASS', 'Codex'],
 	},
 	{
 		company: 'Cisco Secure Endpoint',
 		role: 'Intermediate Software Developer',
-		period: 'january 2020-september 2025',
+		period: 'jan 2020 — sept 2025',
 		description: [
 			'Developed reusable frontend features in React and TypeScript for large-scale security customers',
 			'Partnered with Ruby on Rails backend teams to integrate APIs and deliver data-rich UI, including MITRE ATT&CK-related views',
@@ -38,7 +38,7 @@ export const experience: Experience[] = [
 	{
 		company: 'CNOOC International',
 		role: 'Intern Software Developer',
-		period: 'may 2018-august 2019',
+		period: 'may 2018 — aug 2019',
 		description: [
 			'Built a production web app to visualize oil well data, reducing manual search time for technical teams',
 			'Improved query performance and usability with interactive visualizations',
@@ -49,7 +49,7 @@ export const experience: Experience[] = [
 
 export const otherSkills: SkillGroup[] = [
 	{
-		category: 'Frontend',
+		category: 'frontend',
 		skills: [
 			'JavaScript',
 			'TypeScript',
@@ -62,7 +62,7 @@ export const otherSkills: SkillGroup[] = [
 		],
 	},
 	{
-		category: 'Backend',
+		category: 'backend',
 		skills: [
 			'REST APIs',
 			'Node.js',
@@ -74,15 +74,15 @@ export const otherSkills: SkillGroup[] = [
 		],
 	},
 	{
-		category: 'Web & UI',
+		category: 'web & ui',
 		skills: ['Responsive Design', 'UX & UI Design', 'User Research'],
 	},
 	{
-		category: 'Testing & Quality',
+		category: 'testing & quality',
 		skills: ['Jest', 'Vitest', 'Cypress', 'Capybara', 'SonarQube'],
 	},
 	{
-		category: 'Tools',
+		category: 'tools',
 		skills: ['Git', 'Jira', 'Figma', 'Docker', 'CI/CD', 'AI-Assisted Development'],
 	},
 ];
