@@ -6,7 +6,7 @@ const GetInTouch = () => {
 			<div className='flex flex-col gap-3'>
 				<a
 					className='
-						inline-flex items-center gap-2 text-[15px]
+						inline-flex items-center gap-2 text-[14px]
 						hover:text-sage hover:underline
 						underline-offset-4
 					'
@@ -23,7 +23,7 @@ const GetInTouch = () => {
 				</a>
 				<a
 					className='
-						inline-flex items-center gap-2 text-[15px]
+						inline-flex items-center gap-2 text-[14px]
 						hover:text-sage hover:underline
 						underline-offset-4
 					'
@@ -42,7 +42,7 @@ const GetInTouch = () => {
 				</a>
 				<a
 					className='
-						inline-flex items-center gap-2 text-[15px]
+						inline-flex items-center gap-2 text-[14px]
 						hover:text-sage hover:underline
 						underline-offset-4
 					'
