@@ -4,6 +4,12 @@ export type Experience = {
 	period: string;
 	description: string[];
 	skills: string[];
+	relatedLink?: ExperienceRelatedLink;
+};
+
+export type ExperienceRelatedLink = {
+	label: string;
+	href: string;
 };
 
 export type SkillGroup = {
@@ -33,6 +39,10 @@ export const experience: Experience[] = [
 			'Partnered with Ruby on Rails backend teams to integrate APIs and deliver data-rich UI, including MITRE ATT&CK-related views',
 			'Improved reliability through stronger test automation with Jest and Cypress',
 		],
+		relatedLink: {
+			label: 'View public MITRE ATT&CK evaluation context',
+			href: 'https://evals.mitre.org/results/enterprise?vendor=cisco&evaluation=wizard-spider-sandworm&scenario=1&view=individualParticipant',
+		},
 		skills: [
 			'React.js',
 			'Vue.js',

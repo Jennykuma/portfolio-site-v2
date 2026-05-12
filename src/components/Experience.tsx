@@ -25,6 +25,16 @@ const Experience = () => {
 									</li>
 								))}
 							</ul>
+							{job.relatedLink && (
+								<a
+									href={job.relatedLink.href}
+									target='_blank'
+									rel='noopener noreferrer'
+									className='mt-2 inline-block text-xs text-sage hover:underline underline-offset-2'
+								>
+									{job.relatedLink.label}
+								</a>
+							)}
 							<div className='skills flex flex-wrap gap-2 mt-2'>
 								{job.skills.map((skill: string, i: number) => (
 									<span
