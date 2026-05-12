@@ -20,7 +20,7 @@ export type SkillGroup = {
 export const experience: Experience[] = [
 	{
 		company: 'Cisco Secure Access',
-		role: 'Intermediate Software Developer',
+		role: 'Software Developer',
 		period: 'sept 2025 — present',
 		description: [
 			'Built and maintained complex UI components for enterprise security workflows using React, TypeScript, and TanStack Query',
@@ -32,7 +32,7 @@ export const experience: Experience[] = [
 	},
 	{
 		company: 'Cisco Secure Endpoint',
-		role: 'Intermediate Software Developer',
+		role: 'Software Developer',
 		period: 'jan 2020 — sept 2025',
 		description: [
 			'Developed reusable frontend features in React and TypeScript for large-scale security customers',
