@@ -40,7 +40,7 @@ export const experience: Experience[] = [
 			'Improved reliability through stronger test automation with Jest and Cypress',
 		],
 		relatedLink: {
-			label: 'View public MITRE ATT&CK evaluation context',
+			label: 'View public MITRE ATT&CK evaluation screenshots',
 			href: 'https://evals.mitre.org/results/enterprise?vendor=cisco&evaluation=wizard-spider-sandworm&scenario=1&view=individualParticipant',
 		},
 		skills: [

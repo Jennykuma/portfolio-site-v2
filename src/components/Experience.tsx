@@ -1,4 +1,5 @@
 import { type Experience as ExperienceItem, experience, otherSkills } from '../data/experience';
+import { ExternalLink } from 'lucide-react';
 
 const Experience = () => {
 	return (
@@ -30,8 +31,13 @@ const Experience = () => {
 									href={job.relatedLink.href}
 									target='_blank'
 									rel='noopener noreferrer'
-									className='mt-2 inline-block text-xs text-sage hover:underline underline-offset-2'
+									className='
+									flex items-center gap-1 text-xs mt-2
+									text-zinc-600 hover:text-sage hover:underline
+									dark:text-gray-300 dark:hover:text-sage
+									underline-offset-2 transition-colors duration-200'
 								>
+									<ExternalLink className='w-3.25 h-3.25' />
 									{job.relatedLink.label}
 								</a>
 							)}

@@ -1,6 +1,5 @@
 import Nav from './components/Nav';
 import About from './components/About';
-import GetInTouch from './components/GetInTouch';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Photography from './components/Photography';
@@ -16,7 +15,6 @@ const App = () => {
 				<Experience />
 				<Projects />
 				<Photography />
-				<GetInTouch />
 			</div>
 			<Analytics />
 		</>
