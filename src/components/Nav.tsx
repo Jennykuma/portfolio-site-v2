@@ -29,12 +29,12 @@ const Nav = () => {
 					href='#'
 					className='
 						text-lg md:text-xl font-semibold
-						hover:text-sage hover:underline 
+						hover:text-sage hover:underline
 						underline-offset-4
 					'
 					onClick={(e) => scrollToTop(e)}
 				>
-					jenny le
+					jenny le / ui developer
 				</a>
 				<div className='flex w-full items-center justify-between gap-4 text-sm font-medium sm:w-auto sm:justify-start sm:gap-5'>
 					<a className='hover:text-sage hover:underline underline-offset-4' href='#about'>

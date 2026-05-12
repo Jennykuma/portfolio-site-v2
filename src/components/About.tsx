@@ -65,12 +65,13 @@ const About = () => {
 				</a>
 			</div>
 			<p className='text-zinc-700 dark:text-gray-300'>
-				Hey there! I’m a UI developer at Cisco who loves building clean, thoughtful
-				interfaces. I’m equally curious about the UX side, like digging into design choices,
-				sitting in on user interviews, and exploring tools like Google Analytics to see
-				what’s clicking (and what’s not 🤭). I’m always looking for ways to make things
-				better, from refining code to improving performance and making sure everything’s
-				backed by solid tests.
+				Hey there! I’m a frontend UI developer at Cisco, building React and TypeScript
+				interfaces for enterprise security products. I love clean, thoughtful UI work,
+				especially accessible interactions, maintainable component systems, reliable tests,
+				and the tiny design choices that make an interface feel easier to use. I’m also
+				equally curious about the UX side, like digging into design decisions, sitting in on
+				user interviews, and exploring tools like Google Analytics to see what’s clicking
+				(and what’s not 🤭).
 			</p>
 			<p className='mt-3 text-zinc-700 dark:text-gray-300'>
 				Outside of work, you’ll usually find me crocheting something cute, baking, vibing at
