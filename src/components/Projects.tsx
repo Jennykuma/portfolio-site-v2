@@ -18,7 +18,11 @@ const Projects = () => {
 							href={project.github}
 							target='_blank'
 							rel='noopener noreferrer'
-							className='flex items-center gap-1 text-zinc-600 hover:text-sage hover:underline underline-offset-2 transition-colors duration-200'
+							className='
+							flex items-center gap-1 text-zinc-600
+							hover:text-sage hover:underline
+							dark:text-gray-300 dark:hover:text-sage
+							underline-offset-2 transition-colors duration-200'
 						>
 							<svg
 								className='w-4 h-4 fill-current'
@@ -36,7 +40,11 @@ const Projects = () => {
 									href={project.demo}
 									target='_blank'
 									rel='noopener noreferrer'
-									className='flex items-center gap-1 text-zinc-600 hover:text-sage hover:underline underline-offset-2 transition-colors duration-200'
+									className='
+									flex items-center gap-1 text-zinc-600
+									hover:text-sage hover:underline
+									dark:text-gray-300 dark:hover:text-sage
+									underline-offset-2 transition-colors duration-200'
 								>
 									<ExternalLink className='w-3.5 h-3.5' />
 									demo
