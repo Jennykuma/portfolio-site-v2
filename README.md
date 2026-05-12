@@ -1,73 +1,92 @@
-# React + TypeScript + Vite
+# Jenny Le Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio site built with React, TypeScript, Vite, Tailwind CSS, and Sass. It highlights experience, selected projects, photography, and contact links in a compact single-page layout with light/dark theme support.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS 4
+- Sass
+- Embla Carousel
+- ESLint + Prettier
+- Vercel
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Install dependencies:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-    globalIgnores(["dist"]),
-    {
-        files: ["**/*.{ts,tsx}"],
-        extends: [
-            // Other configs...
-
-            // Remove tseslint.configs.recommended and replace with this
-            tseslint.configs.recommendedTypeChecked,
-            // Alternatively, use this for stricter rules
-            tseslint.configs.strictTypeChecked,
-            // Optionally, add this for stylistic rules
-            tseslint.configs.stylisticTypeChecked,
-
-            // Other configs...
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-]);
+```bash
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Start the local dev server:
 
-```js
-// eslint.config.js
-import reactX from "eslint-plugin-react-x";
-import reactDom from "eslint-plugin-react-dom";
-
-export default defineConfig([
-    globalIgnores(["dist"]),
-    {
-        files: ["**/*.{ts,tsx}"],
-        extends: [
-            // Other configs...
-            // Enable lint rules for React
-            reactX.configs["recommended-typescript"],
-            // Enable lint rules for React DOM
-            reactDom.configs.recommended,
-        ],
-        languageOptions: {
-            parserOptions: {
-                project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-                tsconfigRootDir: import.meta.dirname,
-            },
-            // other options...
-        },
-    },
-]);
+```bash
+npm run dev
 ```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Scripts
+
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the Vite development server |
+| `npm run build` | Type-check and build the production bundle |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Run ESLint |
+| `npm run lint:fix` | Run ESLint and apply automatic fixes |
+| `npm run format` | Format files with Prettier |
+| `npm run format:check` | Check formatting with Prettier |
+
+## Project Structure
+
+```text
+src/
+  components/       Page sections and shared UI components
+  data/             Project and experience content
+  styles/           Tailwind and Sass styles
+  types/            Shared TypeScript types
+public/
+  images/           Portfolio and photography assets
+```
+
+Key files:
+
+- `src/App.tsx` composes the page sections.
+- `src/components/Nav.tsx` contains navigation and theme toggling.
+- `src/data/projects.ts` contains featured project content and links.
+- `src/data/experience.ts` contains work experience and skills content.
+- `src/components/Photography.tsx` defines the photography carousel images.
+- `vercel.json` configures rewrites for linked project demos.
+
+## Updating Content
+
+Most portfolio text is stored in React components or data files:
+
+- Update project cards in `src/data/projects.ts`.
+- Update roles, descriptions, and skill groups in `src/data/experience.ts`.
+- Update contact links in `src/components/GetInTouch.tsx`.
+- Add or replace photography images in `public/images/web`, then update `src/components/Photography.tsx`.
+
+## Deployment
+
+The site is configured for Vercel. The production build command is:
+
+```bash
+npm run build
+```
+
+Vercel rewrites in `vercel.json` forward portfolio project demo paths to their hosted apps.
