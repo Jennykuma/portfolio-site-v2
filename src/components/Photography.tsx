@@ -3,32 +3,40 @@ import type { Slide } from '../types/types';
 
 const SLIDES: Array<Slide> = [
 	{
-		imagePath: '/images/web/DSCF0373.JPG',
-		altText: 'mountain and valley',
+		imagePath: '/images/web/1.JPG',
+		altText: 'laundry drying',
 	},
 	{
-		imagePath: '/images/web/DSCF0380.JPG',
-		altText: 'cloudy mountain view',
+		imagePath: '/images/web/2.JPG',
+		altText: 'alley at night',
 	},
 	{
-		imagePath: '/images/web/DSCF0474.JPG',
-		altText: 'river landscape',
-	},
-	{
-		imagePath: '/images/web/DSCF1206.JPG',
-		altText: 'sunset landscape',
-	},
-	{
-		imagePath: '/images/web/DSCF1217.JPG',
-		altText: 'mountain panorama',
-	},
-	{
-		imagePath: '/images/web/DSCF1286.JPG',
-		altText: 'trail and trees',
+		imagePath: '/images/web/3.JPG',
+		altText: 'bamboo forest',
 	},
 	{
 		imagePath: '/images/web/4.jpg',
-		altText: 'landscape detail',
+		altText: 'restaurant by the river',
+	},
+	{
+		imagePath: '/images/web/5.JPG',
+		altText: 'cherry blossoms',
+	},
+	{
+		imagePath: '/images/web/6.JPG',
+		altText: 'traditional cafe',
+	},
+	{
+		imagePath: '/images/web/7.JPG',
+		altText: 'more blossoms',
+	},
+	{
+		imagePath: '/images/web/8.JPG',
+		altText: 'temple through the trees',
+	},
+	{
+		imagePath: '/images/web/9.JPG',
+		altText: 'sunlight hitting the alley and plants',
 	},
 ];
 
