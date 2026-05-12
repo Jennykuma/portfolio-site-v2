@@ -4,7 +4,7 @@ import GitHubIcon from './icons/GitHubIcon';
 const About = () => {
 	return (
 		<section id='about'>
-			<h2 className='font-serif-display text-4xl text-sage'>about me</h2>
+			<h2 className='font-serif-display text-4xl text-sage'>about</h2>
 			<div className='flex flex-wrap items-center gap-1 mt-1 mb-1 text-xs'>
 				<a
 					href='https://docs.google.com/document/d/1HA1GSLI_EDFc2xo64T8sKAP7vPcBgZQG_HNz8qpoDRs/edit?usp=sharing'
