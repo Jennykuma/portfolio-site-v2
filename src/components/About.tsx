@@ -3,8 +3,10 @@ import GitHubIcon from './icons/GitHubIcon';
 
 const About = () => {
 	return (
-		<section id='about'>
-			<h2 className='font-serif-display text-4xl text-sage'>about</h2>
+		<section id='about' aria-labelledby='about-me-heading'>
+			<h2 className='font-serif-display text-4xl text-sage' id='about-me-heading'>
+				about
+			</h2>
 			<div className='flex flex-wrap items-center gap-1 mt-1 mb-1 text-xs'>
 				<a
 					href='https://docs.google.com/document/d/1HA1GSLI_EDFc2xo64T8sKAP7vPcBgZQG_HNz8qpoDRs/edit?usp=sharing'
@@ -17,10 +19,10 @@ const About = () => {
 						underline-offset-2 transition-colors duration-200
 					'
 				>
-					<ExternalLinkIcon className='w-3.5 h-3.5' />
+					<ExternalLinkIcon className='w-3.5 h-3.5' aria-hidden='true' />
 					resume
 				</a>
-				<Dot className='text-sage' />
+				<Dot className='text-sage' aria-hidden='true' />
 				<a
 					href='https://www.linkedin.com/in/jennyle05'
 					target='_blank'
@@ -32,10 +34,10 @@ const About = () => {
 						underline-offset-2 transition-colors duration-200
 					'
 				>
-					<ExternalLinkIcon className='w-3.5 h-3.5' />
+					<ExternalLinkIcon className='w-3.5 h-3.5' aria-hidden='true' />
 					linkedin
 				</a>
-				<Dot className='text-sage' />
+				<Dot className='text-sage' aria-hidden='true' />
 				<a
 					href='https://github.com/Jennykuma'
 					target='_blank'
@@ -47,10 +49,10 @@ const About = () => {
 						underline-offset-2 transition-colors duration-200
 					'
 				>
-					<GitHubIcon className='w-4 h-4 fill-current' />
+					<GitHubIcon className='w-4 h-4 fill-current' aria-hidden='true' />
 					github
 				</a>
-				<Dot className='text-sage' />
+				<Dot className='text-sage' aria-hidden='true' />
 				<a
 					href='mailto:jennyle.dev@gmail.com'
 					className='
@@ -60,7 +62,7 @@ const About = () => {
 						underline-offset-2 transition-colors duration-200
 					'
 				>
-					<MailIcon className='w-3.5 h-3.5' />
+					<MailIcon className='w-3.5 h-3.5' aria-hidden='true' />
 					email
 				</a>
 			</div>

@@ -20,17 +20,28 @@ const EmblaCarousel = (props: PropType) => {
 	}, [emblaApi]);
 
 	return (
-		<div className='embla'>
+		<div
+			className='embla'
+			role='region'
+			aria-roledescription='carousel'
+			aria-label='Photography carousel'
+		>
 			<div className='embla-viewport' ref={emblaRef}>
-				<div className='embla-container'>
-					{slides.map((slide: Slide) => (
-						<div className='embla-slide' key={slide.imagePath}>
+				<div className='embla-container' aria-live='polite'>
+					{slides.map((slide: Slide, index: number) => (
+						<div
+							role='group'
+							aria-roledescription='slide'
+							aria-label={`Slide ${index + 1} of ${slides.length}`}
+							className='embla-slide'
+							key={slide.imagePath}
+						>
 							<img src={slide.imagePath} alt={slide.altText} />
 						</div>
 					))}
 				</div>
 			</div>
-			<div className='embla-buttons'>
+			<div className='embla-buttons gap-2'>
 				<button
 					type='button'
 					aria-label='Previous photo'
@@ -38,6 +49,7 @@ const EmblaCarousel = (props: PropType) => {
 					onClick={scrollPrev}
 				>
 					<svg
+						aria-hidden='true'
 						className='w-5 h-5 fill-current'
 						xmlns='http://www.w3.org/2000/svg'
 						viewBox='0 0 256 256'
@@ -52,6 +64,7 @@ const EmblaCarousel = (props: PropType) => {
 					onClick={scrollNext}
 				>
 					<svg
+						aria-hidden='true'
 						className='w-5 h-5 fill-current'
 						xmlns='http://www.w3.org/2000/svg'
 						viewBox='0 0 256 256'

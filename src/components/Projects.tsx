@@ -3,18 +3,21 @@ import { Dot, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
 	return (
-		<section id='projects' className='projects'>
-			<h2 className='font-serif-display text-4xl text-sage'>projects</h2>
+		<section id='projects' className='projects' aria-labelledby='projects-heading'>
+			<h2 className='font-serif-display text-4xl text-sage' id='projects-heading'>
+				projects
+			</h2>
 			{projects.map((project: projectItem) => (
 				<div className='project' key={project.title}>
 					<div className='flex justify-between items-center'>
-						<span className='font-serif-display text-lg text-sage mr-2'>
+						<h3 className='font-serif-display text-lg text-sage mr-2'>
 							{project.title}
-						</span>
+						</h3>
 						<span className='date'>{project.period}</span>
 					</div>
 					<div className='flex gap-xs mt-1 text-xs'>
 						<a
+							aria-label={`${project.title} GitHub repository`}
 							href={project.github}
 							target='_blank'
 							rel='noopener noreferrer'
@@ -25,6 +28,7 @@ const Projects = () => {
 							underline-offset-2 transition-colors duration-200'
 						>
 							<svg
+								aria-hidden='true'
 								className='w-4 h-4 fill-current'
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 256 256'
@@ -37,6 +41,7 @@ const Projects = () => {
 							<>
 								<Dot className='text-sage' />
 								<a
+									aria-label={`${project.title} live demo`}
 									href={project.demo}
 									target='_blank'
 									rel='noopener noreferrer'
@@ -46,7 +51,7 @@ const Projects = () => {
 									dark:text-gray-300 dark:hover:text-sage
 									underline-offset-2 transition-colors duration-200'
 								>
-									<ExternalLink className='w-3.5 h-3.5' />
+									<ExternalLink className='w-3.5 h-3.5' aria-hidden='true' />
 									demo
 								</a>
 							</>

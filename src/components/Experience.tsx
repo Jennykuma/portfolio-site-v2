@@ -3,19 +3,21 @@ import { ExternalLink } from 'lucide-react';
 
 const Experience = () => {
 	return (
-		<section id='experience'>
-			<h2 className='font-serif-display text-4xl text-sage'>experience</h2>
+		<section id='experience' aria-labelledby='experience-heading'>
+			<h2 className='font-serif-display text-4xl text-sage' id='experience-heading'>
+				experience
+			</h2>
 			<div className='timeline'>
 				{experience.map((job: ExperienceItem) => (
 					<div key={`${job.company}-${job.period}`} className='node'>
 						<div className='details'>
 							<div className='job-header flex flex-col sm:flex-row sm:items-center sm:justify-between'>
-								<b className='company'>{job.company}</b>
+								<h3 className='company'>{job.company}</h3>
 								<span className='date'>{job.period}</span>
 							</div>
-							<p className='role'>
+							<span className='role'>
 								<i>{job.role}</i>
-							</p>
+							</span>
 							<ul className='description list-disc pl-5'>
 								{job.description.map((item, i) => (
 									<li
@@ -37,7 +39,7 @@ const Experience = () => {
 									dark:text-gray-300 dark:hover:text-sage
 									underline-offset-2 transition-colors duration-200'
 								>
-									<ExternalLink className='w-3.25 h-3.25' />
+									<ExternalLink className='w-3.25 h-3.25' aria-hidden='true' />
 									{job.relatedLink.label}
 								</a>
 							)}
