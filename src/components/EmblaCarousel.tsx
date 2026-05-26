@@ -36,7 +36,23 @@ const EmblaCarousel = (props: PropType) => {
 							className='embla-slide'
 							key={slide.imagePath}
 						>
-							<img src={slide.imagePath} alt={slide.altText} />
+							<picture>
+								{slide.imageSrcSet ? (
+									<source
+										type='image/webp'
+										srcSet={slide.imageSrcSet}
+										sizes={slide.sizes}
+									/>
+								) : null}
+								<img
+									src={slide.imagePath}
+									alt={slide.altText}
+									width={slide.width}
+									height={slide.height}
+									loading='lazy'
+									decoding='async'
+								/>
+							</picture>
 						</div>
 					))}
 				</div>

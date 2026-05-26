@@ -1,43 +1,37 @@
 import EmblaCarousel from './EmblaCarousel';
 import type { Slide } from '../types/types';
 
+const IMAGE_SIZES = '(max-width: 640px) 84vw, (max-width: 1024px) 42vw, 340px';
+
+const createSlide = (
+	id: string,
+	extension: 'JPG' | 'jpg',
+	altText: string,
+	width = 680,
+	height = 1020,
+): Slide => ({
+	imagePath: `/images/web/${id}.${extension}`,
+	imageSrcSet: [
+		`/images/web/optimized/${id}-420.webp 420w`,
+		`/images/web/optimized/${id}-680.webp 680w`,
+		`/images/web/optimized/${id}-960.webp 960w`,
+	].join(', '),
+	sizes: IMAGE_SIZES,
+	altText,
+	width,
+	height,
+});
+
 const SLIDES: Array<Slide> = [
-	{
-		imagePath: '/images/web/1.JPG',
-		altText: 'laundry drying',
-	},
-	{
-		imagePath: '/images/web/2.JPG',
-		altText: 'alley at night',
-	},
-	{
-		imagePath: '/images/web/3.JPG',
-		altText: 'bamboo forest',
-	},
-	{
-		imagePath: '/images/web/4.jpg',
-		altText: 'restaurant by the river',
-	},
-	{
-		imagePath: '/images/web/5.JPG',
-		altText: 'cherry blossoms',
-	},
-	{
-		imagePath: '/images/web/6.JPG',
-		altText: 'traditional cafe',
-	},
-	{
-		imagePath: '/images/web/7.JPG',
-		altText: 'more blossoms',
-	},
-	{
-		imagePath: '/images/web/8.JPG',
-		altText: 'temple through the trees',
-	},
-	{
-		imagePath: '/images/web/9.JPG',
-		altText: 'sunlight hitting the alley and plants',
-	},
+	createSlide('1', 'JPG', 'laundry drying', 680, 453),
+	createSlide('2', 'JPG', 'alley at night'),
+	createSlide('3', 'JPG', 'bamboo forest'),
+	createSlide('4', 'jpg', 'restaurant by the river'),
+	createSlide('5', 'JPG', 'cherry blossoms'),
+	createSlide('6', 'JPG', 'traditional cafe'),
+	createSlide('7', 'JPG', 'more blossoms'),
+	createSlide('8', 'JPG', 'temple through the trees'),
+	createSlide('9', 'JPG', 'sunlight hitting the alley and plants'),
 ];
 
 const Photography = () => {

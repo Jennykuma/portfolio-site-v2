@@ -82,7 +82,12 @@ const About = () => {
 				go—and I care about the little details, whether it’s a button hover state or a
 				perfectly golden cookie!
 			</p>
-			<img src='/images/river.jpg' alt='River landscape' className='mt-5' />
+			<img
+				src='/images/river.jpg'
+				alt='River landscape'
+				className='mt-5'
+				fetchPriority='high'
+			/>
 		</section>
 	);
 };
