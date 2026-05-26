@@ -83,9 +83,13 @@ const About = () => {
 				perfectly golden cookie!
 			</p>
 			<img
-				src='/images/river.jpg'
+				src='/images/optimized/river-960.jpg'
+				srcSet='/images/optimized/river-420.jpg 420w, /images/optimized/river-680.jpg 680w, /images/optimized/river-960.jpg 960w'
+				sizes='(max-width: 672px) calc(100vw - 2rem), 640px'
 				alt='River landscape'
-				className='mt-5'
+				width='960'
+				height='720'
+				className='mt-5 h-auto w-full'
 				fetchPriority='high'
 			/>
 		</section>
