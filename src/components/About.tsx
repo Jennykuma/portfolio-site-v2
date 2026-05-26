@@ -9,7 +9,7 @@ const About = () => {
 			</h2>
 			<div className='flex flex-wrap items-center gap-1 mt-1 mb-1 text-xs'>
 				<a
-					href='https://docs.google.com/document/d/1HA1GSLI_EDFc2xo64T8sKAP7vPcBgZQG_HNz8qpoDRs/edit?usp=sharing'
+					href='https://drive.google.com/file/d/1JUjlN84G1AmblNr-bndVh24rSnqCqyIQ/view?usp=sharing'
 					target='_blank'
 					rel='noopener noreferrer'
 					className='
