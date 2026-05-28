@@ -1,5 +1,5 @@
-import { Dot, ExternalLinkIcon, MailIcon } from 'lucide-react';
 import GitHubIcon from './icons/GitHubIcon';
+import { DotIcon, ExternalLinkIcon, MailIcon } from './icons/SiteIcons';
 
 const About = () => {
 	return (
@@ -22,7 +22,7 @@ const About = () => {
 					<ExternalLinkIcon className='w-3.5 h-3.5' aria-hidden='true' />
 					resume
 				</a>
-				<Dot className='text-sage' aria-hidden='true' />
+				<DotIcon className='w-3 h-3 text-sage' />
 				<a
 					href='https://www.linkedin.com/in/jennyle05'
 					target='_blank'
@@ -37,7 +37,7 @@ const About = () => {
 					<ExternalLinkIcon className='w-3.5 h-3.5' aria-hidden='true' />
 					linkedin
 				</a>
-				<Dot className='text-sage' aria-hidden='true' />
+				<DotIcon className='w-3 h-3 text-sage' />
 				<a
 					href='https://github.com/Jennykuma'
 					target='_blank'
@@ -52,7 +52,7 @@ const About = () => {
 					<GitHubIcon className='w-4 h-4 fill-current' aria-hidden='true' />
 					github
 				</a>
-				<Dot className='text-sage' aria-hidden='true' />
+				<DotIcon className='w-3 h-3 text-sage' />
 				<a
 					href='mailto:jennyle.dev@gmail.com'
 					className='
@@ -90,6 +90,7 @@ const About = () => {
 				width='960'
 				height='720'
 				className='mt-5 h-auto w-full'
+				loading='eager'
 				fetchPriority='high'
 			/>
 		</section>

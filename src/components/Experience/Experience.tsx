@@ -1,7 +1,7 @@
 import { experience, otherSkills } from '../../data/experience';
 import { type Experience as ExperienceItem } from '../../types/types';
 import { renderDescriptionWithBold } from './helpers';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLinkIcon } from '../icons/SiteIcons';
 
 const Experience = () => {
 	return (
@@ -41,7 +41,7 @@ const Experience = () => {
 									dark:text-gray-300 dark:hover:text-sage
 									underline-offset-2 transition-colors duration-200'
 								>
-									<ExternalLink className='w-3.25 h-3.25' aria-hidden='true' />
+									<ExternalLinkIcon className='w-3.25 h-3.25' />
 									{job.relatedLink.label}
 								</a>
 							)}
