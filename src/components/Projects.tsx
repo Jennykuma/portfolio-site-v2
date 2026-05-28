@@ -1,9 +1,30 @@
+import { useState } from 'react';
+import Lightbox from 'yet-another-react-lightbox';
 import { projects } from '../data/projects';
 import { type Project as projectItem } from '../types/types';
 import { renderDescriptionWithBold } from './Experience/helpers';
-import { Dot, ExternalLink } from 'lucide-react';
+import { DotIcon, ExternalLinkIcon } from './icons/SiteIcons';
+import 'yet-another-react-lightbox/styles.css';
 
 const Projects = () => {
+	const [lightboxOpen, setLightboxOpen] = useState(false);
+	const [slides, setSlides] = useState<{ src: string; alt: string }[]>([]);
+	const [currentIndex, setCurrentIndex] = useState(0);
+
+	const openLightbox = (
+		screenshotList: { src: string; thumbSrc?: string; alt: string }[],
+		startIndex: number,
+	) => {
+		setSlides(
+			screenshotList.map((img) => ({
+				src: img.src,
+				alt: img.alt,
+			})),
+		);
+		setCurrentIndex(startIndex);
+		setLightboxOpen(true);
+	};
+
 	return (
 		<section id='projects' className='projects' aria-labelledby='projects-heading'>
 			<h2 className='font-serif-display text-4xl text-sage' id='projects-heading'>
@@ -41,7 +62,7 @@ const Projects = () => {
 						</a>
 						{project.demo && (
 							<>
-								<Dot className='text-sage' />
+								<DotIcon className='w-3 h-3 text-sage' />
 								<a
 									aria-label={`${project.title} live demo`}
 									href={project.demo}
@@ -53,7 +74,7 @@ const Projects = () => {
 									dark:text-gray-300 dark:hover:text-sage
 									underline-offset-2 transition-colors duration-200'
 								>
-									<ExternalLink className='w-3.5 h-3.5' aria-hidden='true' />
+									<ExternalLinkIcon className='w-3.5 h-3.5' />
 									demo
 								</a>
 							</>
@@ -82,8 +103,34 @@ const Projects = () => {
 							</span>
 						))}
 					</div>
+					{project.screenshots?.length ? (
+						<div className='mt-3 flex flex-nowrap gap-2'>
+							{project.screenshots.map((image, idx) => (
+								<button
+									key={idx}
+									className='flex-1 min-w-0 max-w-[150px]'
+									type='button'
+									onClick={() => {
+										openLightbox(project.screenshots!, idx);
+									}}
+								>
+									<img
+										src={image.thumbSrc ?? image.src}
+										alt={image.alt}
+										className='h-20 w-full rounded border border-gray-200 cursor-pointer object-cover'
+									/>
+								</button>
+							))}
+						</div>
+					) : null}
 				</div>
 			))}
+			<Lightbox
+				open={lightboxOpen}
+				index={currentIndex}
+				slides={slides}
+				close={() => setLightboxOpen(false)}
+			/>
 		</section>
 	);
 };

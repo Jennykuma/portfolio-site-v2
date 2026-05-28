@@ -27,6 +27,28 @@ export const projects: Project[] = [
 		],
 		github: 'https://github.com/Jennykuma/kuma-recipes/tree/main#kuma-recipes',
 		demo: '/kuma-recipes',
+		screenshots: [
+			{
+				src: 'public/images/projects/kuma-recipes/home.png',
+				thumbSrc: 'public/images/projects/kuma-recipes/home-thumb.jpg',
+				alt: 'Screenshot of the recipe list page with search and filter tags',
+			},
+			{
+				src: 'public/images/projects/kuma-recipes/create-recipe.png',
+				thumbSrc: 'public/images/projects/kuma-recipes/create-recipe-thumb.jpg',
+				alt: 'Screenshot of the create recipe form with fields and image upload',
+			},
+			{
+				src: 'public/images/projects/kuma-recipes/recipe-details.png',
+				thumbSrc: 'public/images/projects/kuma-recipes/recipe-details-thumb.jpg',
+				alt: 'Screenshot of the individual recipe page with ingredients, instructions, steps, and notes',
+			},
+			{
+				src: 'public/images/projects/kuma-recipes/add-tags.png',
+				thumbSrc: 'public/images/projects/kuma-recipes/add-tags-thumb.jpg',
+				alt: 'Screenshot of the add tags interface',
+			},
+		],
 	},
 	{
 		title: 'ui patterns playground',
@@ -50,6 +72,13 @@ export const projects: Project[] = [
 		],
 		github: 'https://github.com/Jennykuma/ui-patterns-playground#ui-interactions-playground',
 		demo: '/ui-patterns-playground',
+		screenshots: [
+			{
+				src: 'public/images/projects/ui-patterns-playground/home.png',
+				thumbSrc: 'public/images/projects/ui-patterns-playground/home-thumb.jpg',
+				alt: 'Screenshot of the UI patterns playground homepage',
+			},
+		],
 	},
 	{
 		title: 'night market discord bot',
@@ -72,5 +101,22 @@ export const projects: Project[] = [
 		],
 		github: 'https://github.com/Jennykuma/night-market-discord-bot/tree/main#night-market-discord-bot',
 		demo: '',
+		screenshots: [
+			{
+				src: 'public/images/projects/night-market-discord-bot/server-status.png',
+				thumbSrc: 'public/images/projects/night-market-discord-bot/server-status-thumb.jpg',
+				alt: 'Screenshot of the server status command showing rich embed with server status',
+			},
+			{
+				src: 'public/images/projects/night-market-discord-bot/shop-reminder.png',
+				thumbSrc: 'public/images/projects/night-market-discord-bot/shop-reminder-thumb.jpg',
+				alt: 'Screenshot of the shop reminder command showing rich embed with weekly shop/task reminders',
+			},
+			{
+				src: 'public/images/projects/night-market-discord-bot/crystal-price.png',
+				thumbSrc: 'public/images/projects/night-market-discord-bot/crystal-price-thumb.jpg',
+				alt: 'Screenshot of the crystal price command showing rich embed with current blue crystal currency pricing',
+			},
+		],
 	},
 ];

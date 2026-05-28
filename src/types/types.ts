@@ -19,6 +19,7 @@ export type Project = {
 	skills: string[];
 	github: string;
 	demo?: string;
+	screenshots?: { src: string; thumbSrc?: string; alt: string }[];
 };
 
 export type SkillGroup = {
