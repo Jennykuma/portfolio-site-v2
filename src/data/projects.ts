@@ -91,8 +91,8 @@ export const projects: Project[] = [
 		],
 		skills: [
 			'TypeScript',
-			'Nodejs',
-			'discordjs',
+			'Node.js',
+			'discord.js',
 			'moment',
 			'cron',
 			'REST API (axios)',
