@@ -167,13 +167,6 @@ section + section {
 	}
 }
 
-.projects {
-	.project + .project {
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-}
-
 @layer utilities {
 	.node {
 		--node-bg: white;
