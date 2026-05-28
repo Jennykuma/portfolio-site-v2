@@ -1,21 +1,14 @@
-export type Project = {
-	title: string;
-	period: string;
-	description: string[];
-	skills: string[];
-	github: string;
-	demo?: string;
-};
+import { type Project } from '../types/types';
 
 export const projects: Project[] = [
 	{
 		title: 'kuma recipes',
 		period: 'jan 2026 - present',
 		description: [
-			'Built a full-stack recipe app that centralizes recipes, notes, and photos in one workflow',
-			'Implemented tagging and search features to quickly find recipes by name or custom labels',
+			'Built a **full-stack recipe app** that centralizes recipes, notes, and photos in one workflow',
+			'Implemented **tagging and search features** to quickly find recipes by name or custom labels',
 			'Designed low-friction navigation to reduce scrolling and speed up recipe reference during cooking',
-			'Owned architecture end-to-end across React frontend, Fastify API, Prisma models, and PostgreSQL',
+			'Owned architecture **end-to-end** across React frontend, Fastify API, Prisma models, and PostgreSQL',
 			'Integrated auth, routing, and data-fetching layers (Clerk, React Router, TanStack Query)',
 		],
 		skills: [
@@ -39,10 +32,10 @@ export const projects: Project[] = [
 		title: 'ui patterns playground',
 		period: 'dec 2025 - present',
 		description: [
-			'Created a reusable interaction lab to validate UI patterns before shipping to product code',
-			'Implemented non-trivial behaviors including debounced search, click-outside handling, and modal focus flows',
-			'Applied accessibility-first patterns for keyboard navigation and predictable state transitions',
-			'Drove component design and code quality conventions as sole owner of the codebase',
+			'Created a **reusable interaction lab** to validate UI patterns before shipping to product code',
+			'Implemented **non-trivial behaviors** including debounced search, click-outside handling, and modal focus flows',
+			'Applied **accessibility-first patterns** for keyboard navigation and predictable state transitions',
+			'Drove **component design and code quality conventions** as sole owner of the codebase',
 		],
 		skills: [
 			'React',
@@ -62,10 +55,10 @@ export const projects: Project[] = [
 		title: 'night market discord bot',
 		period: 'jul 2022 - aug 2024',
 		description: [
-			'Supported a 400-member Discord community with automated reminders and utility slash commands',
-			'Integrated external game-status and pricing APIs, then transformed responses into rich embeds',
-			'Managed reliability of scheduled cron jobs and hosted runtime operations on Heroku',
-			'Owned feature delivery, bot maintenance, and production updates over a two-year lifecycle',
+			'**Supported a 400-member Discord community** with automated reminders and utility slash commands',
+			'Integrated **external game-status and pricing APIs**, then transformed responses into rich embeds',
+			'Managed **reliability of scheduled cron jobs** and hosted runtime operations on Heroku',
+			'Owned feature delivery, bot maintenance, and production updates over a **two-year lifecycle**',
 		],
 		skills: [
 			'TypeScript',

@@ -1,4 +1,6 @@
-import { type Project as projectItem, projects } from '../data/projects';
+import { projects } from '../data/projects';
+import { type Project as projectItem } from '../types/types';
+import { renderDescriptionWithBold } from './Experience/helpers';
 import { Dot, ExternalLink } from 'lucide-react';
 
 const Projects = () => {
@@ -60,7 +62,7 @@ const Projects = () => {
 					<ul className='mt-2 pl-5 list-disc text-sm text-zinc-700 dark:text-gray-300'>
 						{project.description.map((point: string, i: number) => (
 							<li key={i} className='mt-2'>
-								{point}
+								{renderDescriptionWithBold(point)}
 							</li>
 						))}
 					</ul>

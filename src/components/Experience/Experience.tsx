@@ -1,4 +1,6 @@
-import { type Experience as ExperienceItem, experience, otherSkills } from '../data/experience';
+import { experience, otherSkills } from '../../data/experience';
+import { type Experience as ExperienceItem } from '../../types/types';
+import { renderDescriptionWithBold } from './helpers';
 import { ExternalLink } from 'lucide-react';
 
 const Experience = () => {
@@ -24,7 +26,7 @@ const Experience = () => {
 										key={i}
 										className='mt-2 text-sm text-zinc-700 dark:text-gray-300'
 									>
-										{item}
+										{renderDescriptionWithBold(item)}
 									</li>
 								))}
 							</ul>
