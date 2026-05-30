@@ -3,28 +3,15 @@ import { type Project } from '../types/types';
 export const projects: Project[] = [
 	{
 		title: 'kuma recipes',
-		period: 'jan 2026 - present',
+		period: 'jan 2026 — present',
 		description: [
-			'Built a **full-stack recipe app** that centralizes recipes, notes, and photos in one workflow',
-			'Implemented **tagging and search features** to quickly find recipes by name or custom labels',
+			'Built a **full-stack recipe app** with authenticated recipe management, tagging, search, notes, and photo uploads',
 			'Designed low-friction navigation to reduce scrolling and speed up recipe reference during cooking',
+			'Added **shareable recipe links** so users can send **read-only recipe pages** without requiring sign-in',
 			'Owned architecture **end-to-end** across React frontend, Fastify API, Prisma models, and PostgreSQL',
 			'Integrated auth, routing, and data-fetching layers (Clerk, React Router, TanStack Query)',
 		],
-		skills: [
-			'React',
-			'TypeScript',
-			'Tailwind CSS',
-			'Vite',
-			'Fastify',
-			'Prisma',
-			'PostgreSQL',
-			'Clerk',
-			'TanStack Query',
-			'React Router',
-			'Vitest',
-			'Docker',
-		],
+		skills: ['React', 'TypeScript', 'Fastify', 'PostgreSQL', 'Prisma', 'Docker'],
 		github: 'https://github.com/Jennykuma/kuma-recipes/tree/main#kuma-recipes',
 		demo: '/kuma-recipes',
 		screenshots: [
@@ -52,7 +39,7 @@ export const projects: Project[] = [
 	},
 	{
 		title: 'ui patterns playground',
-		period: 'dec 2025 - present',
+		period: 'dec 2025 — present',
 		description: [
 			'Created a **reusable interaction lab** to validate UI patterns before shipping to product code',
 			'Implemented **non-trivial behaviors** including debounced search, click-outside handling, and modal focus flows',
@@ -62,13 +49,10 @@ export const projects: Project[] = [
 		skills: [
 			'React',
 			'TypeScript',
-			'Vite',
 			'Tailwind CSS',
-			'UI interaction patterns',
-			'Accessibility (a11y) basics',
-			'Event handling (keyboard/mouse/document listeners)',
+			'Interactive UI patterns',
+			'Accessibility / a11y',
 			'Component architecture',
-			'ESLint + Prettier',
 		],
 		github: 'https://github.com/Jennykuma/ui-patterns-playground#ui-interactions-playground',
 		demo: '/ui-patterns-playground',
@@ -82,23 +66,14 @@ export const projects: Project[] = [
 	},
 	{
 		title: 'night market discord bot',
-		period: 'jul 2022 - aug 2024',
+		period: 'jul 2022 — aug 2024',
 		description: [
 			'**Supported a 400-member Discord community** with automated reminders and utility slash commands',
 			'Integrated **external game-status and pricing APIs**, then transformed responses into rich embeds',
 			'Managed **reliability of scheduled cron jobs** and hosted runtime operations on Heroku',
 			'Owned feature delivery, bot maintenance, and production updates over a **two-year lifecycle**',
 		],
-		skills: [
-			'TypeScript',
-			'Node.js',
-			'discord.js',
-			'moment',
-			'cron',
-			'REST API (axios)',
-			'dotenv',
-			'Heroku',
-		],
+		skills: ['TypeScript', 'Node.js', 'discord.js', 'REST APIs', 'Scheduled Jobs', 'Heroku'],
 		github: 'https://github.com/Jennykuma/night-market-discord-bot/tree/main#night-market-discord-bot',
 		demo: '',
 		screenshots: [
