@@ -10,7 +10,7 @@
 		},
 		{
 			"source": "/shared-recipes/:match*",
-			"destination": "https://kuma-recipes-web.vercel.app/shared-recipes/:match*"
+			"destination": "https://kuma-recipes-web.vercel.app/kuma-recipes/shared-recipes/:match*"
 		},
 		{
 			"source": "/ui-patterns-playground",
