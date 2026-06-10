@@ -20,11 +20,6 @@ export const projects: Project[] = [
 				alt: 'Screenshot of the recipe list page with search and filter tags',
 			},
 			{
-				src: '/images/projects/kuma-recipes/create-recipe.png',
-				thumbSrc: '/images/projects/kuma-recipes/create-recipe-thumb.jpg',
-				alt: 'Screenshot of the create recipe form with fields and image upload',
-			},
-			{
 				src: '/images/projects/kuma-recipes/recipe-details.png',
 				thumbSrc: '/images/projects/kuma-recipes/recipe-details-thumb.jpg',
 				alt: 'Screenshot of the individual recipe page with ingredients, instructions, steps, and notes',
@@ -33,6 +28,11 @@ export const projects: Project[] = [
 				src: '/images/projects/kuma-recipes/add-tags.png',
 				thumbSrc: '/images/projects/kuma-recipes/add-tags-thumb.jpg',
 				alt: 'Screenshot of the add tags interface',
+			},
+			{
+				src: '/images/projects/kuma-recipes/tag-design.jpeg',
+				thumbSrc: '/images/projects/kuma-recipes/tag-design-thumb.jpg',
+				alt: 'Screenshot of the recipe tag design exploration with category chips',
 			},
 		],
 	},
