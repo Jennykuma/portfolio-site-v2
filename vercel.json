@@ -15,6 +15,18 @@
 		{
 			"source": "/ui-patterns-playground/:match*",
 			"destination": "https://ui-patterns-playground-sigma.vercel.app/:match*"
+		},
+		{
+			"source": "/sb-manager/:match*",
+			"destination": "https://ui-patterns-playground-sigma.vercel.app/sb-manager/:match*"
+		},
+		{
+			"source": "/sb-addons/:match*",
+			"destination": "https://ui-patterns-playground-sigma.vercel.app/sb-addons/:match*"
+		},
+		{
+			"source": "/css/:match*",
+			"destination": "https://ui-patterns-playground-sigma.vercel.app/css/:match*"
 		}
 	]
 }
