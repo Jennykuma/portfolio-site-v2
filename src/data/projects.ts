@@ -54,7 +54,7 @@ export const projects: Project[] = [
 			'Focus Management',
 		],
 		github: 'https://github.com/Jennykuma/ui-patterns-playground#ui-interactions-playground',
-		demo: '/ui-patterns-playground',
+		demo: 'https://storybook.jennyle.dev',
 		screenshots: [
 			{
 				src: '/images/projects/ui-patterns-playground/home.png',
