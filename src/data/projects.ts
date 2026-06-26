@@ -8,7 +8,15 @@ export const projects: Project[] = [
 			'**Architected and shipped** a full-stack recipe journal with end-to-end ownership across frontend, REST API, database schema, and authentication, including AI-powered recipe parsing from raw text',
 			'**Built a Research and Design Lab** allowing users to spin off recipe variants, log attempts with ratings and notes, pin annotations to specific ingredients and steps, and track which variant produced the best result',
 		],
-		skills: ['React', 'TypeScript', 'Fastify', 'Prisma', 'Clerk', 'PostgreSQL', 'Claude Code'],
+		skills: [
+			'React',
+			'TypeScript',
+			'Fastify',
+			'Prisma',
+			'Clerk',
+			'PostgreSQL',
+			'Anthropic API',
+		],
 		github: 'https://github.com/Jennykuma/kuma-recipes/tree/main#kuma-recipes',
 		demo: '/kuma-recipes',
 		screenshots: [
