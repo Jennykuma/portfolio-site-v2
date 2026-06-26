@@ -5,12 +5,10 @@ export const projects: Project[] = [
 		title: 'kuma recipes',
 		period: 'jan 2026 — present',
 		description: [
-			'Built an **accessible full-stack recipe application** using **React, Fastify, Prisma, Clerk, and PostgreSQL**',
-			'Enabled users to **create, edit, delete, search, filter, and share recipes** through unique links',
-			'Designed low-friction recipe browsing and management flows for day-to-day usability',
-			'Owned architecture **end-to-end** across frontend, API, database models, and authentication',
+			'**Architected and shipped** a full-stack recipe journal with end-to-end ownership across frontend, REST API, database schema, and authentication, including AI-powered recipe parsing from raw text',
+			'**Built a Research and Design Lab** allowing users to spin off recipe variants, log attempts with ratings and notes, pin annotations to specific ingredients and steps, and track which variant produced the best result',
 		],
-		skills: ['React', 'TypeScript', 'Fastify', 'Prisma', 'Clerk', 'PostgreSQL'],
+		skills: ['React', 'TypeScript', 'Fastify', 'Prisma', 'Clerk', 'PostgreSQL', 'Claude Code'],
 		github: 'https://github.com/Jennykuma/kuma-recipes/tree/main#kuma-recipes',
 		demo: '/kuma-recipes',
 		screenshots: [
@@ -25,9 +23,9 @@ export const projects: Project[] = [
 				alt: 'Screenshot of the individual recipe page with ingredients, instructions, steps, and notes',
 			},
 			{
-				src: '/images/projects/kuma-recipes/add-tags.png',
-				thumbSrc: '/images/projects/kuma-recipes/add-tags-thumb.jpg',
-				alt: 'Screenshot of the add tags interface',
+				src: '/images/projects/kuma-recipes/rd-lab.png',
+				thumbSrc: '/images/projects/kuma-recipes/rd-lab-thumb.jpg',
+				alt: 'Screenshot of the R&D Lab interface for tracking recipe variants, notes, and attempt logs',
 			},
 			{
 				src: '/images/projects/kuma-recipes/tag-design.jpeg',
@@ -40,9 +38,7 @@ export const projects: Project[] = [
 		title: 'ui patterns playground',
 		period: 'jan 2026 — present',
 		description: [
-			'Built a **react playground** for reusable accessibility patterns featuring **focus management, keyboard navigation, and ARIA-compliant UI components**',
-			'Implemented interaction patterns including **modals, tooltips, tabs, and toasts**',
-			'Used the project as a focused environment to validate accessible frontend behaviors before product integration',
+			'**Built and documented** a clean, well-documented Storybook component library of ARIA-compliant React patterns covering focus management, keyboard navigation, and accessible interactions including modals, tooltips, tabs, toasts, and form inputs',
 		],
 		skills: [
 			'React',
@@ -61,16 +57,18 @@ export const projects: Project[] = [
 				thumbSrc: '/images/projects/ui-patterns-playground/home-thumb.jpg',
 				alt: 'Screenshot of the UI patterns playground homepage',
 			},
+			{
+				src: '/images/projects/ui-patterns-playground/storybook.png',
+				thumbSrc: '/images/projects/ui-patterns-playground/storybook-thumb.jpg',
+				alt: 'Screenshot of the Storybook documentation view for the DebouncedSearch component with its controls panel',
+			},
 		],
 	},
 	{
 		title: 'night market discord bot',
 		period: 'jul 2022 — aug 2024',
 		description: [
-			'**Supported a 400-member Discord community** with automated reminders and utility slash commands',
-			'Integrated **external game-status and pricing APIs**, then transformed responses into rich embeds',
-			'Managed **reliability of scheduled cron jobs** and hosted runtime operations on Heroku',
-			'Owned feature delivery, bot maintenance, and production updates over a **two-year lifecycle**',
+			'**Owned full lifecycle delivery** of a bot serving a 400-member Discord community, including automated reminders, slash commands, external API integrations with rich embeds, and cron job reliability over two years',
 		],
 		skills: ['TypeScript', 'Node.js', 'discord.js', 'REST APIs', 'Scheduled Jobs', 'Heroku'],
 		github: 'https://github.com/Jennykuma/night-market-discord-bot/tree/main#night-market-discord-bot',
