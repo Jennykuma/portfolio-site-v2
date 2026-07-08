@@ -7,7 +7,7 @@ const About = () => {
 			<h2 className='font-serif-display text-4xl text-sage' id='about-me-heading'>
 				about
 			</h2>
-			<div className='flex flex-wrap items-center gap-1 mt-1 mb-1 text-xs'>
+			<div className='flex flex-wrap items-center gap-1 mt-1 mb-1 text-sm'>
 				<a
 					href='https://drive.google.com/file/d/1A9jnbaA5AJE4xMw5Lxz4T54Zc9A1hyCx/view?usp=sharing'
 					target='_blank'

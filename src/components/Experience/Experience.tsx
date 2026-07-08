@@ -24,7 +24,7 @@ const Experience = () => {
 								{job.description.map((item, i) => (
 									<li
 										key={i}
-										className='mt-2 text-sm text-zinc-700 dark:text-gray-300'
+										className='mt-2 text-base text-zinc-700 dark:text-gray-300'
 									>
 										{renderDescriptionWithBold(item)}
 									</li>
@@ -36,7 +36,7 @@ const Experience = () => {
 									target='_blank'
 									rel='noopener noreferrer'
 									className='
-									flex items-center gap-1 text-xs mt-2
+									flex items-center gap-1 text-sm mt-2
 									text-zinc-600 hover:text-sage hover:underline
 									dark:text-gray-300 dark:hover:text-sage
 									underline-offset-2 transition-colors duration-200'
@@ -50,11 +50,9 @@ const Experience = () => {
 									<span
 										key={i}
 										className='
-											px-2 py-0.5 text-xs
-											rounded-full bg-zinc-100
-											text-zinc-700 dark:bg-zinc-700
-											dark:text-gray-200
-											border border-sage/20
+											px-2 py-0.5 text-sm
+											rounded-full text-sage-dark bg-sage/15 dark:bg-sage/15
+										  dark:text-sage border border-sage/20
 										'
 									>
 										{skill}
@@ -67,7 +65,7 @@ const Experience = () => {
 			</div>
 			<div className='other-skills'>
 				<h2 className='font-serif-display text-4xl text-sage'>other skills</h2>
-				<div className='other-skills-grid'>
+				<div className='other-skills-grid mt-2'>
 					{otherSkills.map((group) => (
 						<div key={group.category} className='other-skills-row'>
 							<span className='label'>{group.category}</span>

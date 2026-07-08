@@ -39,7 +39,7 @@ const Projects = () => {
 							</h3>
 							<span className='date'>{project.period}</span>
 						</div>
-						<div className='flex gap-xs mt-1 text-xs'>
+						<div className='flex gap-xs mt-1 text-sm'>
 							<a
 								aria-label={`${project.title} GitHub repository`}
 								href={project.github}
@@ -81,7 +81,7 @@ const Projects = () => {
 								</>
 							)}
 						</div>
-						<ul className='mt-2 pl-5 list-disc text-sm text-zinc-700 dark:text-gray-300'>
+						<ul className='mt-2 pl-5 list-disc text-base text-zinc-700 dark:text-gray-300'>
 							{project.description.map((point: string, i: number) => (
 								<li key={i} className='mt-2'>
 									{renderDescriptionWithBold(point)}
@@ -93,12 +93,9 @@ const Projects = () => {
 								<span
 									key={i}
 									className='
-										px-2 py-0.5 text-xs
-										rounded-full bg-zinc-100
-										text-zinc-700 dark:bg-zinc-700
-										dark:text-gray-200
-										border border-sage/20
-									'
+										px-2 py-0.5 text-sm
+										rounded-full text-sage-dark bg-sage/15 dark:bg-sage/15
+										dark:text-sage border border-sage/20'
 								>
 									{skill}
 								</span>
@@ -118,7 +115,7 @@ const Projects = () => {
 										<img
 											src={image.thumbSrc ?? image.src}
 											alt={image.alt}
-											className='h-20 w-full rounded border border-gray-200 cursor-pointer object-cover'
+											className='h-20 w-full rounded border border-gray-200 dark:border-zinc-600 cursor-pointer object-cover'
 										/>
 									</button>
 								))}

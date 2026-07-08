@@ -2,8 +2,9 @@
 
 @theme {
 	--color-sage: #8cae73;
+	--color-sage-dark: #5c7a45;
 
-	--font-poppins: 'Poppins', 'sans-serif';
+	--font-body: 'Figtree', 'sans-serif';
 	--font-serif-display: 'DM Serif Display', 'sans-serif';
 }
 
