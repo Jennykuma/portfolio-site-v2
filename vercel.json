@@ -14,7 +14,7 @@
 		},
 		{
 			"source": "/blog",
-			"destination": "https://jenny-notes.vercel.app/blog"
+			"destination": "https://jenny-notes.vercel.app"
 		},
 		{
 			"source": "/blog/:slug*",
