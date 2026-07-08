@@ -1,6 +1,6 @@
 # Jenny Le Portfolio
 
-Personal portfolio site built with React, TypeScript, Vite, Tailwind CSS, and Sass. It highlights experience, selected projects, photography, and contact links in a compact single-page layout with light/dark theme support.
+Personal portfolio site built with React, TypeScript, Vite, Tailwind CSS, and Sass. It highlights experience, selected projects, and contact links in a compact single-page layout with light/dark theme support.
 
 ## Tech Stack
 
@@ -9,7 +9,6 @@ Personal portfolio site built with React, TypeScript, Vite, Tailwind CSS, and Sa
 - Vite
 - Tailwind CSS 4
 - Sass
-- Embla Carousel
 - ESLint + Prettier
 - Vercel
 
@@ -60,7 +59,7 @@ src/
   styles/           Tailwind and Sass styles
   types/            Shared TypeScript types
 public/
-  images/           Portfolio and photography assets
+  images/           Portfolio assets
 ```
 
 Key files:
@@ -69,7 +68,6 @@ Key files:
 - `src/components/Nav.tsx` contains navigation and theme toggling.
 - `src/data/projects.ts` contains featured project content and links.
 - `src/data/experience.ts` contains work experience and skills content.
-- `src/components/Photography.tsx` defines the photography carousel images.
 - `vercel.json` configures rewrites for linked project demos.
 
 ## Updating Content
@@ -79,7 +77,6 @@ Most portfolio text is stored in React components or data files:
 - Update project cards in `src/data/projects.ts`.
 - Update roles, descriptions, and skill groups in `src/data/experience.ts`.
 - Update contact links in `src/components/GetInTouch.tsx`.
-- Add or replace photography images in `public/images/web`, then update `src/components/Photography.tsx`.
 
 ## Deployment
 

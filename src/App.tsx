@@ -2,7 +2,6 @@ import Nav from './components/Nav';
 import About from './components/About';
 import Experience from './components/Experience/Experience';
 import Projects from './components/Projects';
-import Photography from './components/Photography';
 import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
@@ -14,7 +13,6 @@ const App = () => {
 				<About />
 				<Experience />
 				<Projects />
-				<Photography />
 			</main>
 			<Analytics />
 		</div>
