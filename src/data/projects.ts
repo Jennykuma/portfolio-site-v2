@@ -9,7 +9,16 @@ export const projects: Project[] = [
 			'Built a **Research & Design Lab** letting users spin off recipe variants, log attempts with ratings and notes, and pin annotations to specific ingredients and steps',
 			'Enabled users to **create, edit, delete, search, filter, and share recipes** through unique links, backed by **Prisma, PostgreSQL, and Supabase**',
 		],
-		skills: ['React', 'TypeScript', 'Fastify', 'Prisma', 'Supabase', 'Clerk', 'PostgreSQL', 'Anthropic API'],
+		skills: [
+			'React',
+			'TypeScript',
+			'Fastify',
+			'Prisma',
+			'Supabase',
+			'Clerk',
+			'PostgreSQL',
+			'Anthropic API',
+		],
 		github: 'https://github.com/Jennykuma/kuma-recipes/tree/main#kuma-recipes',
 		demo: '/kuma-recipes',
 		screenshots: [
@@ -24,9 +33,9 @@ export const projects: Project[] = [
 				alt: 'Screenshot of the individual recipe page with ingredients, instructions, steps, and notes',
 			},
 			{
-				src: '/images/projects/kuma-recipes/add-tags.png',
-				thumbSrc: '/images/projects/kuma-recipes/add-tags-thumb.jpg',
-				alt: 'Screenshot of the add tags interface',
+				src: '/images/projects/kuma-recipes/rd-lab.png',
+				thumbSrc: '/images/projects/kuma-recipes/rd-lab-thumb.jpg',
+				alt: 'Screenshot of the R&D Lab interface for tracking recipe variants, notes, and attempt logs',
 			},
 			{
 				src: '/images/projects/kuma-recipes/tag-design.jpeg',
@@ -58,6 +67,11 @@ export const projects: Project[] = [
 				src: '/images/projects/ui-patterns-playground/home.png',
 				thumbSrc: '/images/projects/ui-patterns-playground/home-thumb.jpg',
 				alt: 'Screenshot of the UI patterns playground homepage',
+			},
+			{
+				src: '/images/projects/ui-patterns-playground/storybook.png',
+				thumbSrc: '/images/projects/ui-patterns-playground/storybook-thumb.jpg',
+				alt: 'Screenshot of the Storybook documentation view for the DebouncedSearch component with its controls panel',
 			},
 		],
 	},

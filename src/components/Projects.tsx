@@ -81,7 +81,7 @@ const Projects = () => {
 								</>
 							)}
 						</div>
-						<ul className='mt-2 pl-5 list-disc text-base text-zinc-700 dark:text-gray-300'>
+						<ul className='mt-2 pl-5 list-disc text-base text-zinc-700 dark:text-gray-300 marker:text-zinc-500'>
 							{project.description.map((point: string, i: number) => (
 								<li key={i} className='mt-2'>
 									{renderDescriptionWithBold(point)}

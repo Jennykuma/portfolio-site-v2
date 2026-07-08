@@ -24,7 +24,7 @@ const Experience = () => {
 								{job.description.map((item, i) => (
 									<li
 										key={i}
-										className='mt-2 text-base text-zinc-700 dark:text-gray-300'
+										className='mt-2 text-base text-zinc-700 dark:text-gray-300 marker:text-zinc-500'
 									>
 										{renderDescriptionWithBold(item)}
 									</li>

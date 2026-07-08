@@ -59,6 +59,8 @@ export const otherSkills: SkillGroup[] = [
 			'React',
 			'TypeScript',
 			'JavaScript',
+			'HTML5',
+			'CSS3',
 			'Redux',
 			'TanStack Query (React Query)',
 			'React Router',
@@ -83,7 +85,7 @@ export const otherSkills: SkillGroup[] = [
 	{
 		category: 'accessibility & ux',
 		skills: [
-			'WCAG Accessibility',
+			'WCAG',
 			'ARIA',
 			'UX/UI Design',
 			'Responsive Design',
