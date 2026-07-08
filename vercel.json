@@ -12,5 +12,17 @@
 			"source": "/shared-recipes/:match*",
 			"destination": "https://kuma-recipes-web.vercel.app/kuma-recipes/shared-recipes/:match*"
 		}
+	],
+	"redirects": [
+		{
+			"source": "/blog",
+			"destination": "https://jenny-notes.vercel.app",
+			"permanent": false
+		},
+		{
+			"source": "/blog/:slug*",
+			"destination": "https://jenny-notes.vercel.app/:slug*",
+			"permanent": false
+		}
 	]
 }

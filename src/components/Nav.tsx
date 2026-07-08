@@ -44,6 +44,9 @@ const Nav = () => {
 				<a className='hover:text-sage hover:underline underline-offset-4' href='#projects'>
 					projects
 				</a>
+				<a className='hover:text-sage hover:underline underline-offset-4' href='/blog'>
+					blog
+				</a>
 				<button
 					type='button'
 					aria-label='Toggle dark mode'
