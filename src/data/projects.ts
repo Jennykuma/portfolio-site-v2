@@ -5,12 +5,11 @@ export const projects: Project[] = [
 		title: 'kuma recipes',
 		period: 'jan 2026 — present',
 		description: [
-			'Built an **accessible full-stack recipe application** using **React, Fastify, Prisma, Clerk, and PostgreSQL**',
-			'Enabled users to **create, edit, delete, search, filter, and share recipes** through unique links',
-			'Designed low-friction recipe browsing and management flows for day-to-day usability',
-			'Owned architecture **end-to-end** across frontend, API, database models, and authentication',
+			'Architected and shipped a full-stack recipe journal with **end-to-end ownership** across frontend, REST API, database schema, and authentication, including **AI-powered recipe parsing** using the **Anthropic API**',
+			'Built a **Research & Design Lab** letting users spin off recipe variants, log attempts with ratings and notes, and pin annotations to specific ingredients and steps',
+			'Enabled users to **create, edit, delete, search, filter, and share recipes** through unique links, backed by **Prisma, PostgreSQL, and Supabase**',
 		],
-		skills: ['React', 'TypeScript', 'Fastify', 'Prisma', 'Clerk', 'PostgreSQL'],
+		skills: ['React', 'TypeScript', 'Fastify', 'Prisma', 'Supabase', 'Clerk', 'PostgreSQL', 'Anthropic API'],
 		github: 'https://github.com/Jennykuma/kuma-recipes/tree/main#kuma-recipes',
 		demo: '/kuma-recipes',
 		screenshots: [
@@ -40,9 +39,8 @@ export const projects: Project[] = [
 		title: 'ui patterns playground',
 		period: 'jan 2026 — present',
 		description: [
-			'Built a **react playground** for reusable accessibility patterns featuring **focus management, keyboard navigation, and ARIA-compliant UI components**',
-			'Implemented interaction patterns including **modals, tooltips, tabs, and toasts**',
-			'Used the project as a focused environment to validate accessible frontend behaviors before product integration',
+			'Built and documented a **Storybook component library** covering design tokens and **ARIA-compliant React patterns**, including modals, tooltips, tabs, toasts, and form inputs',
+			'Implemented all **7 components from scratch** with no third-party UI libraries, owning **keyboard navigation and focus management** end-to-end',
 		],
 		skills: [
 			'React',
@@ -67,10 +65,8 @@ export const projects: Project[] = [
 		title: 'night market discord bot',
 		period: 'jul 2022 — aug 2024',
 		description: [
-			'**Supported a 400-member Discord community** with automated reminders and utility slash commands',
-			'Integrated **external game-status and pricing APIs**, then transformed responses into rich embeds',
-			'Managed **reliability of scheduled cron jobs** and hosted runtime operations on Heroku',
-			'Owned feature delivery, bot maintenance, and production updates over a **two-year lifecycle**',
+			'Owned full lifecycle delivery of a bot serving a **400-member Discord community**, including automated reminders, slash commands, and **external API integrations** transformed into rich embeds',
+			'Managed **scheduled cron job reliability** and hosted runtime operations on Heroku over a **two-year** maintenance lifecycle',
 		],
 		skills: ['TypeScript', 'Node.js', 'discord.js', 'REST APIs', 'Scheduled Jobs', 'Heroku'],
 		github: 'https://github.com/Jennykuma/night-market-discord-bot/tree/main#night-market-discord-bot',
