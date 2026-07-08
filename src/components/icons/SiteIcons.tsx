@@ -3,13 +3,7 @@ import type { SVGProps } from 'react';
 type IconProps = SVGProps<SVGSVGElement>;
 
 export const DotIcon = ({ className, ...props }: IconProps) => (
-	<svg
-		viewBox='0 0 24 24'
-		aria-hidden='true'
-		focusable='false'
-		className={className}
-		{...props}
-	>
+	<svg viewBox='0 0 24 24' aria-hidden='true' focusable='false' className={className} {...props}>
 		<circle cx='12' cy='12' r='3' fill='currentColor' />
 	</svg>
 );

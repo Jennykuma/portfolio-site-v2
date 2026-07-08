@@ -38,10 +38,7 @@ const Nav = () => {
 				<a className='hover:text-sage hover:underline underline-offset-4' href='#about'>
 					about
 				</a>
-				<a
-					className='hover:text-sage hover:underline underline-offset-4'
-					href='#experience'
-				>
+				<a className='hover:text-sage hover:underline underline-offset-4' href='#experience'>
 					experience
 				</a>
 				<a className='hover:text-sage hover:underline underline-offset-4' href='#projects'>

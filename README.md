@@ -40,15 +40,15 @@ npm run preview
 
 ## Scripts
 
-| Command | Description |
-| --- | --- |
-| `npm run dev` | Start the Vite development server |
-| `npm run build` | Type-check and build the production bundle |
-| `npm run preview` | Serve the production build locally |
-| `npm run lint` | Run ESLint |
-| `npm run lint:fix` | Run ESLint and apply automatic fixes |
-| `npm run format` | Format files with Prettier |
-| `npm run format:check` | Check formatting with Prettier |
+| Command                | Description                                |
+| ---------------------- | ------------------------------------------ |
+| `npm run dev`          | Start the Vite development server          |
+| `npm run build`        | Type-check and build the production bundle |
+| `npm run preview`      | Serve the production build locally         |
+| `npm run lint`         | Run ESLint                                 |
+| `npm run lint:fix`     | Run ESLint and apply automatic fixes       |
+| `npm run format`       | Format files with Prettier                 |
+| `npm run format:check` | Check formatting with Prettier             |
 
 ## Project Structure
 

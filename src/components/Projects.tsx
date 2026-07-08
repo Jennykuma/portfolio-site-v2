@@ -34,9 +34,7 @@ const Projects = () => {
 				{projects.map((project: projectItem) => (
 					<div className='project' key={project.title}>
 						<div className='flex justify-between items-center'>
-							<h3 className='font-serif-display text-lg text-sage mr-2'>
-								{project.title}
-							</h3>
+							<h3 className='font-serif-display text-lg text-sage mr-2'>{project.title}</h3>
 							<span className='date'>{project.period}</span>
 						</div>
 						<div className='flex gap-xs mt-1 text-sm'>

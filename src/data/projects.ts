@@ -83,7 +83,8 @@ export const projects: Project[] = [
 			'Managed **scheduled cron job reliability** and hosted runtime operations on Heroku over a **two-year** maintenance lifecycle',
 		],
 		skills: ['TypeScript', 'Node.js', 'discord.js', 'REST APIs', 'Scheduled Jobs', 'Heroku'],
-		github: 'https://github.com/Jennykuma/night-market-discord-bot/tree/main#night-market-discord-bot',
+		github:
+			'https://github.com/Jennykuma/night-market-discord-bot/tree/main#night-market-discord-bot',
 		demo: '',
 		screenshots: [
 			{
