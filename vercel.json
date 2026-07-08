@@ -14,11 +14,11 @@
 		},
 		{
 			"source": "/blog",
-			"destination": "https://jenny-notes.vercel.app"
+			"destination": "https://jenny-notes.vercel.app/blog"
 		},
 		{
 			"source": "/blog/:slug*",
-			"destination": "https://jenny-notes.vercel.app/:slug*"
+			"destination": "https://jenny-notes.vercel.app/blog/:slug*"
 		}
 	]
 }
