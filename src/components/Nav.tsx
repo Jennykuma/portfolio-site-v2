@@ -26,11 +26,7 @@ const Nav = () => {
 				py-4 flex flex-col items-start gap-2 text-zinc-700 dark:text-gray-200 sm:flex-row sm:items-center sm:justify-between'
 		>
 			<h1 className='text-lg md:text-xl font-semibold'>
-				<a
-					href='#top'
-					className='hover:text-sage hover:underline underline-offset-4'
-					onClick={scrollToTop}
-				>
+				<a href='#top' className='hover:text-sage hover:underline' onClick={scrollToTop}>
 					jenny le / ui developer
 				</a>
 			</h1>
